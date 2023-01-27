@@ -8,7 +8,7 @@
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     mix-blend-mode: normal;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     display: grid;
   grid-template-rows: 1fr;
     grid-template-columns: 2fr 2fr;
@@ -119,10 +119,11 @@ height: 335px;
     color: var(--neutralDark);}
 
 .fastlinkcat span a:nth-of-type(even):hover {  background: var(--neutralDark);
-    color: var(--accentClr);}
+    color: var(--accentClr);
+}
 
 .fastlinkcat span a:nth-of-type(even) {
-  background: var(--accentClr);
+  background: var(--FAM-quoteBackground);
     color: var(--neutralDark);
 }
 
