@@ -418,6 +418,7 @@ transition: 1s;
 }
 
 infonav{
+  font-size: var(--little-size);
   transition: 1s;
 height: 18px;
 width:0px;
