@@ -325,11 +325,11 @@ position: relative;
     align-items: center;
     border-radius: 5px;
     justify-content: center;
-    height: 20px;
+height: 30px;
     padding: 5px;
   z-index: 80;
   transition:1s;
-    width: 20px;
+    width: 30px;
 }
 .pa_nav a:nth-of-type(odd) {
     background-color:var(--accentClr);
@@ -420,7 +420,7 @@ transition: 1s;
 infonav{
   font-size: var(--little-size);
   transition: 1s;
-height: 18px;
+height: 30px;
 width:0px;
       z-index: 2;
     overflow: hidden;
