@@ -515,7 +515,7 @@ padding-right: 5px;
 }
 
 .maj ba {
-    background: linear-gradient(270deg, var(--colo_accent) 0%, var(--accentClrDark) 100%);
+    background: linear-gradient(270deg, var(--accentClr) 0%, var(--accentClrDark) 100%);
     text-transform: uppercase;
     font-size: 8px;
     font-weight: bold;
