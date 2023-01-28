@@ -2,7 +2,7 @@
 .category_guide {
     margin: 100px auto;
     height: 450px;
-    width: 1000px;
+  /****  width: 1000px; ***/
     font-family: 'Inter';
     position: relative;
     background: rgba(0, 0, 0, 0.5);
