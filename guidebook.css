@@ -102,10 +102,10 @@ height: 335px;
 }
 
 .fastlinkcat {
-  padding: 15px;
-  background:var(--neutralDarker);
-  border-radius:10px;
-  /***  width: 450px; ***/
+padding: 15px;
+    background: linear-gradient(225deg, transparent, var(--neutralDark));
+    border-radius: 10px;
+    border: solid 1px var(--neutral);
 }
 
 .fastlink {
@@ -116,18 +116,20 @@ height: 335px;
 .fastlinkcat span a:nth-of-type(odd)  {
   background: var(--neutralDark);
     color: var(--accentClr);
+    border: solid 1px var(--neutral);
 }
 
 .fastlinkcat span a:nth-of-type(odd):hover {  background: var(--accentClr);
     color: var(--neutralDark);}
 
-.fastlinkcat span a:nth-of-type(even):hover {  background: var(--neutralDark);
-    color: var(--accentClr);
+.fastlinkcat span a:nth-of-type(even):hover {  
+background: var(--contrast);
+    color: var(--FAM-chatBackground);
 }
 
 .fastlinkcat span a:nth-of-type(even) {
-  background: var(--FAM-quoteBackground);
-    color: var(--neutralDark);
+background: var(--FAM-quoteBackground);
+    color: var(--contrast);
 }
 
 .fastlinkcat span {
