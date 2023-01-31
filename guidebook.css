@@ -5,7 +5,8 @@
   /****  width: 1000px; ***/
     font-family: 'Inter';
     position: relative;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(225deg, var(--neutralDark), transparent, var(--neutralDark));
+    border: solid 1px var(--neutral);
     backdrop-filter: blur(5px);
     mix-blend-mode: normal;
     border-radius: 0 0 10px 10px;
