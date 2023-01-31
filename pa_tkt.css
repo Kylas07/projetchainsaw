@@ -224,23 +224,22 @@ input#tkt_tabpa1:checked ~ .divf {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.imgur.com/rde6PAb.jpg);
   margin-left: 0px;
 }
-
+/******* Mika  *******/
 input#tkt_tabpa2:checked ~ .divf {
-  background-position: 28% 100%;
     background-size: cover;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://64.media.tumblr.com/c5ea51347317bf0303ebf5f829a268a1/58e2be794de651dc-ca/s500x750/13cb80dc6d9fb55ad830e6b4ea31349b8b8f0855.gif);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.imgur.com/apBwUzz.png);
       background-size: cover;
   margin-left: 0px;
   background-position: 35% 30%;
 }
-
+/******* Velo *******/
 input#tkt_tabpa3:checked ~ .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://64.media.tumblr.com/7c3d08e1ea2e25cf7bc01936e3cd78b8/ff1a29277b6438ad-99/s540x810/c45ec4b8a21b6d60c5a562767df15b3d83d45635.gif);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.pinimg.com/originals/0d/30/5d/0d305db58ef2ced011663f407170f807.gif);
     background-size: cover;
   margin-left: 0px;
-background-position: 90% 20%;
+background-position: 64% 20%;
 }
-
+/******* Miren *******/
 input#tkt_tabpa4:checked ~ .divf {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://64.media.tumblr.com/482a4bd679f855bdb4f3e40b02adcbee/e04e1f5e3e872521-9b/s400x600/50eeea26fbd3ac4c4e1828f57707b3d7aa0faf1d.gif);
   background-size: cover;
