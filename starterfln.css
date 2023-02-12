@@ -89,11 +89,10 @@ body {
 }
 
 .bgheader { 
-height: 1192px;
+    height: 835px;
     background-image: var(--bgheader);
-    margin: -1242px auto 50px auto;
-    width: 1100px;
-    min-height: 1000px;
+    margin: -838px auto 0px auto;
+    width: 1102px;
     overflow: hidden;
     background-size: cover;
     background-position: top center;
