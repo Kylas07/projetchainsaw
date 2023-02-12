@@ -283,7 +283,7 @@ color: var(--accent2);
 .tab [type="radio"] {
   display: none;
 }
-.content {
+.pacontent {
     margin-left: -585px;
     margin-top: 300px;
     position: absolute;
@@ -295,7 +295,7 @@ color: var(--accent2);
   background: #f1e4f7;
   
 }
-[type="radio"]:checked ~ label ~ .content {
+[type="radio"]:checked ~ label ~ .pacontent {
 opacity: 1;
 }
 
