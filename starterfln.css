@@ -382,8 +382,8 @@ backdrop-filter:blur(5px);}
     top: 0px;
     left: 10%;
     z-index: 1000;
-    height: 50px;
-    padding: 20px;
+    height: 40px;
+    padding: 10px;
     border-bottom: solid 1px var(--accent);
     width: calc(90% - 45px);
     border-radius: 0 0 15px 15px;
@@ -398,14 +398,14 @@ backdrop-filter:blur(5px);}
 #bar_nav_modul {
 }
 
-ion-icon {
+#bar_navv ion-icon {
   color:white;
-  font-size: 35px}
+  font-size: 30px}
 
 
 #bar_nav_standard div , #bar_nav_modul div {
-height: 50px;
-    width: 50px;
+height: 40px;
+    width: 40px;
     border-radius: 5px;
     background: #2f3e5b;
     cursor: pointer;
@@ -442,7 +442,7 @@ height: 50px;
 /******* gudie *************/
 #fln-menu {display:none;}
 .fln-menu {
-    height: 60px;
+    height: 40px;
     display: flex;
     text-transform: uppercase;
     background: linear-gradient(to right, var(--accent) 0%, var(--accent2) 100%);
@@ -452,10 +452,9 @@ height: 50px;
     place-items: center;
     top: 15px;
     font-weight: 700;
-    font-size: 25px;
     position: fixed;
     left: calc(55% + 20px);
-    z-index: 1111;
+    z-index: 1112;
     border-radius: 5px;
     cursor: pointer;
     transition: 1s ease;
@@ -476,7 +475,7 @@ input#fln-menu:checked ~ label.fln-menu {
     left: -70.1%;
     height: calc(100vh - 50px);
     width: calc(70% - 100px);
-    z-index: 111;
+    z-index: 1111;
     font: 300 18px 'Raleway';
     color: white;
     letter-spacing: .5px;
@@ -518,7 +517,7 @@ right: -15vh;
       background: #101010;
     backdrop-filter: blur(10px);
     position: fixed;
-    z-index: 111;
+    z-index: 1111;
     font: 300 18px 'Raleway';
     color: white;
     letter-spacing: .5px;
