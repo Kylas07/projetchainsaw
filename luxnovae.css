@@ -175,7 +175,6 @@ grid-row: 2;
     padding: 25px;
     margin: 15px 15px;
     color: var(--txt);
-    max-height: 550px;
     overflow: auto;
     font-family: 'Inter';
     font-weight: 400;
@@ -223,3 +222,18 @@ z-index: 4;
 .rppostln b {background:var(--txt);
   line-height:1.7;
   padding:2px 2px;}
+
+.pioup {
+      height: 100%;
+    grid-row: 1/4;
+    grid-column: 1;
+    display: grid;
+    z-index: 3;
+    position: relative;
+  border-right:1px solid var(--border);
+}
+
+.pioup > div {
+  grid-row:1;
+  grid-column:1;
+}
