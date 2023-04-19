@@ -13,13 +13,6 @@
     border: 6px solid var(--rpln);
   }
 
-body {margin:100px auto;
-display:flex;
-  background:#f1f1f1;
-  align-items: center;
-  flex-direction:column;
-justify-content: center;}
-
 .rppostln {
   background:var(--rpln);
   min-height:500px;
