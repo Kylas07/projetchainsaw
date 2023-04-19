@@ -55,7 +55,8 @@ width: 100%;
 .pkmlistrp {
 z-index: 10;
     position: relative;
-    align-content: space-around;
+    align-content: center;
+    gap: 50px;
     display: grid;
     justify-content: center;
 }
