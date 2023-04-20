@@ -18,10 +18,11 @@
   min-height:500px;
   width:710px;
   display:grid;
+    margin: auto;
 }
 
 .rppost-top {
-    width: 710px;
+    width: 710px;F
     height: 50px;
   overflow:hidden;
   border-bottom:10px solid var(--border);
@@ -128,6 +129,7 @@ z-index: 10;
 }
 
 .ttlln h1 {
+    font-size: 32px;
     line-height: 30px;
     margin: 30px 30px 30px 115px;
     letter-spacing: -1px;
@@ -186,7 +188,7 @@ grid-row: 2;
     overflow: auto;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
 }
 .motifln {
   background-image: url(https://i.imgur.com/fusZ8Ii.jpg);
