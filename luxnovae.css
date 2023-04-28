@@ -1,13 +1,13 @@
 
-::-webkit-scrollbar {
+.rppostln > ::-webkit-scrollbar {
     width: 13px;
   }
 
-::-webkit-scrollbar-track {
+.rppostln > ::-webkit-scrollbar-track {
     background:  var(--rpln);
   }
 
-::-webkit-scrollbar-thumb {
+.rppostln > ::-webkit-scrollbar-thumb {
     background-color: var(--border);
     border-radius: 1px;
     border: 6px solid var(--rpln);
