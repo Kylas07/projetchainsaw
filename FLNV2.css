@@ -1,0 +1,476 @@
+
+/****** ------------------------------------------------------------------------------
+ ****** AFFICHAGE D'UN SUJET --------------------------------------------------------- ******/
+
+/* PARTICIPANTS DU SUJET ---*/
+
+/* Conteneur de la liste des participants au sujet */
+.poster-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Avatar du participant*/
+.poster {
+    background: var(--poster-avatar);
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin-left: -8px;
+    border: 2px solid var(--neutralDark);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Lien de renvoi vers son profil */
+.poster a {
+    display: block;
+    height: 100%;
+}
+
+/* Nombre de participants */
+.poster-count {
+    margin-left: 8px;
+}
+
+.poster-more-list {
+    display: none;
+}
+
+.poster-more {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.poster-more:hover .poster-more-list {
+    display: block;
+    position: absolute;
+    top: 29px;
+    width: 150px;
+    background: var(--neutralDarker);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*** ------------------------------- ***/
+/*** SUJET ------------------------- ***/
+
+
+.post_row {
+    background: var(--neutral);
+    display: grid;
+    grid-template-rows: max-content auto;
+    grid-template-columns: min-content 1fr;
+    border-bottom: 1px solid var(--neutralDark);
+}
+
+div.post_row:nth-of-type(2) {
+    border-radius: 5px 5px 0 0;
+}
+
+div.post_row:last-of-type {
+    border-radius: 0 0 5px 5px;
+    border-bottom: none
+}
+
+.post_details {
+    grid-column: 1 / span 2;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--neutralDark);
+    width: 100%;
+}
+
+.post_date {
+    flex-grow: 20;
+}
+
+
+/* BOUTONS D'EDITION DU MESSAGE --- */
+/* Conteneur boutons d'édition */
+ul.profile-icons {
+    flex-grow: 1;
+    display: flex;
+    margin-block: 0;
+    margin-inline: 0;
+    padding-inline: 0;
+    list-style-type: none;
+}
+
+/*UN SEUL bouton d'édition */
+ul.profile-icons li {
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+/*hover d'un bouton d'édition*/
+ul.profile-icons li:hover {
+    background: var(--neutralDark);
+}
+
+
+
+/* BOUTON LIKE --- */
+/* Conteneur du bouton like */
+.like_button {
+    float: right;
+    margin-left: 10px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+/* Bouton like */
+.rep-button,
+.rep-button:active,
+.rep-button:focus {
+    background: var(--neutralDark);
+    color: var(--textColor);
+    border: none;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/*Bouton au survol*/
+.rep-button:hover {
+    background: var(--var(--contrastLighter))
+}
+
+/* Texte "j'aime" */
+button.rep-button .like_text {}
+
+/*compteur de like*/
+button.rep-button .rep-nb {
+    margin-left: 5px;
+    padding: 0 3px;
+    background: var(--neutral);
+    border-radius: 3px;
+}
+
+
+.post_pseudo {
+    font-weight: bold;
+}
+.field_content img {
+max-width: 200px;
+    object-fit: cover;
+}
+.post_avatar a img {
+width: 250px;
+    height: 350px;
+    object-fit: cover;
+  border: 5px solid var(--neutralDark);
+    border-radius: 10px;
+}
+/* Lien "@" de mention */
+a.fa-mention {}
+
+
+/* Mention "en ligne" */
+.online {
+    display: inline-block;
+    position: relative;
+    background-color: var(--neutralDarker);
+    border-radius: 5px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.online:empty {display: none}
+
+.post_message {padding: 25px;}
+
+
+/* REPONSE RAPIDE --- */
+/*supression de la mention "réponse rapide" */
+.quickreply div.h3 {display: none}
+
+/*centrer la réponse rapide*/
+.quickreply {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Retire le cadre de la réponse rapide pour les invités */
+#quickreply_content:empty {display: none}
+
+
+.contmsg {
+background-size: cover;
+    background-image: url(https://i.imgur.com/hCcDeuf.png);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  flex-direction: column;
+}
+
+/**********enfer des profils *********/ 
+
+.strucmsg {
+  display:grid;
+  grid-template-rows:auto;
+grid-template-columns: 300px auto;
+  grid-column: 1/3;
+}
+
+.post_profile {
+    padding: 10px;
+    border-right: 1px solid var(--neutralDark);
+    background: var(--text);
+}
+
+.post_profile {
+  grid-row: 1/3;
+    grid-column: 1;
+}
+
+.strucmsg > .lateprofile {
+  grid-row: 1;
+    grid-column: 2;
+  height: 200px;
+}
+
+.strucmsg > .post_message {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.post_profile > center , .post_pseudo, .lateprofile > .post_profile .post_avatar {display:none;}
+
+.post_avatar {
+  margin-top: 10px;
+    text-align: center;
+}
+
+.lateprofile > .latpost_profile {
+  background-size: cover;
+background: linear-gradient(90.16deg, rgba(199, 157, 75, 0.5) 0.14%, rgba(255, 255, 255, 0.5) 100.98%), url(https://i.imgur.com/hCcDeuf.png);
+  height: 100%;
+  display:grid;
+  grid-template-rows:1fr 1fr;
+}
+
+.lateprofile > .latpost_profile .post_pseudo, .lateprofile > .latpost_profile .post_userinfo{
+    display: block;
+}
+
+.lateprofile > .latpost_profile .post_pseudo a {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 64px;
+    display: flex;
+    color: #FFFFFF;
+    max-height: 90px;
+    overflow: auto;
+}
+
+.user_field.field-icon-profil span.field_content img{width: 195px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 5px solid var(--neutralDark);}
+
+.lateprofile > .latpost_profile .post_userinfo .user_field.field-citation-de-votre-choix , .post_userinfo > div:not(.user_field.field-citation-de-votre-choix){
+  display:none;
+}
+
+.user_field.field-citation-de-votre-choix {
+background: rgba(217, 217, 217, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--neutral);
+  padding: 10px 0;
+}
+
+.user_field.field-citation-de-votre-choix > .field_label {
+  display:none;
+}
+.lateprofile {
+}
+
+.cont_late {
+  justify-content: space-around;
+display: flex;
+    align-items: center;
+}
+.cont_late img {
+    width: 195px;
+    height: 50px;
+    object-fit: cover;
+    border: 5px solid var(--neutral);
+    border-radius: 10px;
+}
+
+.tags_cont {
+  
+}
+
+.champ_pronom , .champ_tw , .champ_feat {
+background: rgba(255, 255, 255, 0.5);
+border-radius: 10px;
+  padding:1px 10px;
+}
+
+/*****/
+
+.slider {
+    display: flex;
+    flex-direction: row;
+  position: relative;
+}
+
+.tabs {
+  padding:10px;
+  align-self: center;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+.tab.active {
+  background-color: #f00;
+}
+
+.contenta {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.content-item {
+position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background-color: var(--neutralDark);
+    border-radius: 10px 0 0 0;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.content-item.slide-in {
+  transform: translateY(0%);
+}
+
+.content-item.slide-out {
+  transform: translateY(100%);
+}
+
+.tab-button {
+display: flex;
+    text-align-last: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.tab-button.tab-button1 {
+  background-color: var(--text);
+  color:var(--neutral);
+  transition:ease .5s;
+}
+
+.tab-button.tab-button2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    color:var(--text);
+  transition:ease .5s;
+}
+
+.post_avatar {
+display: grid;
+    overflow: hidden;
+    width: 260px;
+    height: 360px;
+    background-size: cover;
+    margin: 10px auto 0 auto;
+}
+
+.post_avatar > div {
+  grid-column:1;
+  grid-row:1;
+  z-index:100;
+  background:rgba(30, 30, 30, 0.3);
+  border-radius:10px;
+  margin-top:360px;
+transition: .5s ease;
+  display: grid;
+    grid-template-rows: 45px auto;
+}
+
+.post_avatar:hover > div {
+    margin-top:0px;
+transition: .5s ease;
+}
+
+.tophov {
+background: var(--accentClr);
+    border-radius: 10px 10px 0 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+.post_avatar span.champ_tier {
+  font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+align-items: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.iconmood {
+      position: relative;
+    margin-bottom: -50px;
+      margin-left: -45px;
+}
+.iconmood img {
+ width: 60px;
+height: 60px;
+border: 5px solid #1E1E1E;
+border-radius: 100px;
+      object-fit: cover;
+}
+
+.midhov {
+  background:rgba(28 25 27 / 70%);
+  padding: 20px;
+}
+
+.midhov > div {
+    background: var(--text);
+    color: var(--neutral);
+    border-radius: 10px;
+    min-height: 150px;
+    max-height: 200px;
+    overflow: auto;
+    margin-top: 25px;
+    padding: 10px;
+    text-align: justify;
+}
+.midhov > div::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+.midhov > div::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+
+.post_avatar a {
+    grid-column:1;
+  grid-row:1;
+}
