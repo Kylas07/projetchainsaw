@@ -449,7 +449,7 @@ border-radius: 100px;
 }
 
 .midhov:hover {
-backdrop-filter: blur(10px);
+backdrop-filter: blur(5px);
 transition:1s ease;
 }
 
