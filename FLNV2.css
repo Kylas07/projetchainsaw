@@ -248,10 +248,10 @@ grid-template-columns: 300px auto;
 
 .lateprofile > .latpost_profile {
   background-size: cover;
-background: linear-gradient(90.16deg, rgba(199, 157, 75, 0.5) 0.14%, rgba(255, 255, 255, 0.5) 100.98%), url(https://i.imgur.com/hCcDeuf.png);
-  height: 100%;
-  display:grid;
-  grid-template-rows:1fr 1fr;
+    background: linear-gradient(271deg, rgba(199, 157, 75, 0.5) 0.14%, rgb(0 0 0) 100.98%), url(https://i.imgur.com/hCcDeuf.png);
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .lateprofile > .latpost_profile .post_pseudo, .lateprofile > .latpost_profile .post_userinfo{
