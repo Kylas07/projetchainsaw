@@ -445,6 +445,12 @@ border-radius: 100px;
 .midhov {
   background:rgba(28 25 27 / 70%);
   padding: 20px;
+    transition:1s ease;
+}
+
+.midhov:hover {
+backdrop-filter: blur(10px);
+transition:1s ease;
 }
 
 .midhov > div {
