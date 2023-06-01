@@ -1,39 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {  
-  const tabButton = document.querySelector('.tab-button');
-const contentItems = document.querySelectorAll('.content-item');
+function applyTabButtonFunctionality(post) {
+  const tabButton = post.querySelector('.tab-button');
+  const contentItems = post.querySelectorAll('.content-item');
 
-let activeIndex = 0;
+  let activeIndex = 0;
 
-tabButton.addEventListener('click', () => {
-  activeIndex = (activeIndex === 0) ? 1 : 0;
+  tabButton.addEventListener('click', () => {
+    activeIndex = (activeIndex === 0) ? 1 : 0;
 
-  contentItems.forEach(item => {
-    item.classList.remove('active', 'slide-in', 'slide-out');
-  });
+    contentItems.forEach(item => {
+      item.classList.remove('active', 'slide-in', 'slide-out');
+    });
 
-  contentItems[activeIndex].classList.add('active', 'slide-in');
-  contentItems.forEach((item, itemIndex) => {
-    if (itemIndex !== activeIndex) {
-      item.classList.add('slide-out');
+    contentItems[activeIndex].classList.add('active', 'slide-in');
+    contentItems.forEach((item, itemIndex) => {
+      if (itemIndex !== activeIndex) {
+        item.classList.add('slide-out');
+      }
+    });
+
+    if (activeIndex === 0) {
+      tabButton.textContent = '⌃';
+      tabButton.classList.remove('tab-button2');
+      tabButton.classList.add('tab-button1');
+    } else {
+      tabButton.textContent = '⌄';
+      tabButton.classList.remove('tab-button1');
+      tabButton.classList.add('tab-button2');
     }
   });
-
-  if (activeIndex === 0) {
-    tabButton.textContent = '⌃';
-      tabButton.classList.remove('tab-button2');
-    tabButton.classList.add('tab-button1');
-  } else {
-    tabButton.textContent = '⌄';
-     tabButton.classList.remove('tab-button1');
-    tabButton.classList.add('tab-button2');
-  }
-});
-
+}
 
 const posts = document.querySelectorAll('.post.post_row');
 
-
 posts.forEach((post) => {
+
+  
   const dateInscriptionText = post.querySelector('.user_field.field-date-dinscription .field_content').textContent;
   const pointsText = post.querySelector('.user_field.field-points .field_content').textContent;
   const argentText = post.querySelector('.user_field.field-argent .field_content').textContent;
@@ -56,4 +58,7 @@ posts.forEach((post) => {
     post.querySelector('.champ_tw').textContent = TwText;
     post.querySelector('.champ_feat').textContent = FeatText;
     post.querySelector('.champ_runes').innerHTML = RunesText;
-});});
+
+
+  applyTabButtonFunctionality(post);
+});
