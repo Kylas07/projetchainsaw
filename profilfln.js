@@ -1,4 +1,5 @@
-const tabButton = document.querySelector('.tab-button');
+document.addEventListener('DOMContentLoaded', () => {  
+  const tabButton = document.querySelector('.tab-button');
 const contentItems = document.querySelectorAll('.content-item');
 
 let activeIndex = 0;
@@ -55,4 +56,4 @@ posts.forEach((post) => {
     post.querySelector('.champ_tw').textContent = TwText;
     post.querySelector('.champ_feat').textContent = FeatText;
     post.querySelector('.champ_runes').innerHTML = RunesText;
-});
+});});
