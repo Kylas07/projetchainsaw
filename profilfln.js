@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     post.querySelector('.champ_xp').textContent = pointsText;
     post.querySelector('.champ_money').textContent = argentText;
     post.querySelector('.champ_origine').textContent = descriptionText;
-    post.querySelector('.champ_champ_tier').textContent = tierText;
+    post.querySelector('.champ_tier').textContent = tierText;
     
     const pronomField = post.querySelector('.user_field.field-pronoms .field_content');
     const pronomText = pronomField ? pronomField.textContent : 'Pronom par défaut';
@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const iconPost = post.querySelector('.iconpost');
     const userField = post.querySelector('.user_field.field-icon-profil .field_content');
-    const htmlContent = userField ? userField.innerHTML : 'https://i.imgur.com/C3v7rCi.png';
+    const htmlContent = userField ? userField.innerHTML : '<img src="https://i.imgur.com/C3v7rCi.png">';
 
     const icon2Post = post.querySelector('.iconmood');
     const userField2 = post.querySelector('.user_field.field-icon-profil2 .field_content');
-    const htmlContent2 = userField2 ? userField2.innerHTML : 'https://i.imgur.com/C3v7rCi.png';
+    const htmlContent2 = userField2 ? userField2.innerHTML : '<img src="https://i.imgur.com/C3v7rCi.png">';
     
     iconPost.innerHTML = htmlContent;
     icon2Post.innerHTML = htmlContent2;
