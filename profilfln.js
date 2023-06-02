@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const icon2Post = post.querySelector('.iconmood');
     const userField2 = post.querySelector('.user_field.field-icon-profil2 .field_content');
-    const htmlContent = userField2 ? userField2.innerHTML : 'https://i.imgur.com/C3v7rCi.png';
+    const htmlContent2 = userField2 ? userField2.innerHTML : 'https://i.imgur.com/C3v7rCi.png';
     
     iconPost.innerHTML = htmlContent;
-    icon2Post.innerHTML = htmlContent;
+    icon2Post.innerHTML = htmlContent2;
     post.querySelector('.champ_pronom').textContent = pronomText;
     post.querySelector('.champ_tw').textContent = TwText;
     post.querySelector('.champ_feat').textContent = FeatText;
