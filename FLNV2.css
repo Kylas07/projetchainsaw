@@ -219,7 +219,6 @@ grid-template-columns: 300px auto;
 
 .post_profile {
     padding: 10px;
-    border-right: 1px solid var(--neutralDark);
     background: var(--text);
 }
 
@@ -296,6 +295,7 @@ background: rgba(217, 217, 217, 0.1);
   justify-content: space-around;
 display: flex;
     align-items: center;
+        margin-top: 10px;
 }
 .cont_late img {
     width: 195px;
