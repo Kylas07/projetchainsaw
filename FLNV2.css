@@ -419,6 +419,7 @@ background: var(--accentClr);
     display: flex;
     align-items: center;
     place-content: center;
+    z-index: 100;
 }
 
 .post_avatar span.champ_tier {
@@ -435,11 +436,13 @@ color: #FFFFFF;
       margin-left: -45px;
 }
 .iconmood img {
- width: 60px;
-height: 60px;
-border: 5px solid #1E1E1E;
-border-radius: 100px;
-      object-fit: cover;
+width: 80px;
+    height: 80px;
+    margin-left: -35px;
+    margin-right: 20px;
+    border: 5px solid #1E1E1E;
+    border-radius: 100px;
+    object-fit: cover;
 }
 
 .midhov {
