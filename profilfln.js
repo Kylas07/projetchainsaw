@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tierText = tierField ? tierField.textContent : 'tier 0';
     
     const descriptionField = post.querySelector('.user_field.field-description .field_content');
-    const descriptionText = descriptionField ? argentField.textContent : 'description de votre personnage';
+    const descriptionText = descriptionField ? descriptionField.textContent : 'description de votre personnage';
     
     const messageField = post.querySelector('.user_field.field-messages .field_content');
     const messageText = messageField ? messageField.textContent : 'Message par défaut';
