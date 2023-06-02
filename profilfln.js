@@ -2,22 +2,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const posts = document.querySelectorAll('.post.post_row');
 
   posts.forEach((post) => {
-    const dateInscriptionText = post.querySelector('.user_field.field-date-dinscription .field_content').textContent;
-    const pointsText = post.querySelector('.user_field.field-points .field_content').textContent;
-    const argentText = post.querySelector('.user_field.field-argent .field_content').textContent;
-    const messageText = post.querySelector('.user_field.field-messages .field_content').textContent;
+    const dateInscriptionField = post.querySelector('.user_field.field-date-dinscription .field_content');
+    const dateInscriptionText = dateInscriptionField ? dateInscriptionField.textContent : 'Date d\'inscription par défaut';
+    
+    const pointsField = post.querySelector('.user_field.field-points .field_content');
+    const pointsText = pointsField ? pointsField.textContent : 'Points par défaut';
+    
+    const argentField = post.querySelector('.user_field.field-argent .field_content');
+    const argentText = argentField ? argentField.textContent : 'Argent par défaut';
+    
+    const messageField = post.querySelector('.user_field.field-messages .field_content');
+    const messageText = messageField ? messageField.textContent : 'Message par défaut';
+    
     post.querySelector('.champ_msg').textContent = messageText;
     post.querySelector('.champ_inscr').textContent = dateInscriptionText;
     post.querySelector('.champ_xp').textContent = pointsText;
     post.querySelector('.champ_money').textContent = argentText;
 
-    const pronomText = post.querySelector('.user_field.field-pronoms .field_content').textContent;
-    const TwText = post.querySelector('.user_field.field-tw .field_content').textContent;
-    const FeatText = post.querySelector('.user_field.field-feat-credits .field_content').textContent;
-    const RunesText = post.querySelector('.user_field.field-runes-actives .field_content').innerHTML;
+    const pronomField = post.querySelector('.user_field.field-pronoms .field_content');
+    const pronomText = pronomField ? pronomField.textContent : 'Pronom par défaut';
+    
+    const twField = post.querySelector('.user_field.field-tw .field_content');
+    const TwText = twField ? twField.textContent : 'Tw par défaut';
+    
+    const featField = post.querySelector('.user_field.field-feat-credits .field_content');
+    const FeatText = featField ? featField.textContent : 'Feat par défaut';
+    
+    const runesField = post.querySelector('.user_field.field-runes-actives .field_content');
+    const RunesText = runesField ? runesField.innerHTML : 'Runes par défaut';
+    
     const iconPost = post.querySelector('.iconpost');
     const userField = post.querySelector('.user_field.field-icon-profil .field_content');
-    const htmlContent = userField.innerHTML;
+    const htmlContent = userField ? userField.innerHTML : 'Contenu par défaut';
 
     iconPost.innerHTML = htmlContent;
     post.querySelector('.champ_pronom').textContent = pronomText;
