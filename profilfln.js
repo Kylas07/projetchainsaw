@@ -6,10 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateInscriptionText = dateInscriptionField ? dateInscriptionField.textContent : 'Date d\'inscription par défaut';
     
     const pointsField = post.querySelector('.user_field.field-points .field_content');
-    const pointsText = pointsField ? pointsField.textContent : 'Points par défaut';
+    const pointsText = pointsField ? pointsField.textContent : '0xp';
     
     const argentField = post.querySelector('.user_field.field-argent .field_content');
-    const argentText = argentField ? argentField.textContent : 'Argent par défaut';
+    const argentText = argentField ? argentField.textContent : '0$';
+    
+    const tierField = post.querySelector('.user_field.field-tier .field_content');
+    const tierText = tierField ? tierField.textContent : 'tier 0';
+    
+    const descriptionField = post.querySelector('.user_field.field-description .field_content');
+    const descriptionText = descriptionField ? argentField.textContent : 'description de votre personnage';
     
     const messageField = post.querySelector('.user_field.field-messages .field_content');
     const messageText = messageField ? messageField.textContent : 'Message par défaut';
@@ -18,7 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     post.querySelector('.champ_inscr').textContent = dateInscriptionText;
     post.querySelector('.champ_xp').textContent = pointsText;
     post.querySelector('.champ_money').textContent = argentText;
-
+    post.querySelector('.champ_origine').textContent = descriptionText;
+    post.querySelector('.champ_champ_tier').textContent = tierText;
+    
     const pronomField = post.querySelector('.user_field.field-pronoms .field_content');
     const pronomText = pronomField ? pronomField.textContent : 'Pronom par défaut';
     
@@ -33,9 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const iconPost = post.querySelector('.iconpost');
     const userField = post.querySelector('.user_field.field-icon-profil .field_content');
-    const htmlContent = userField ? userField.innerHTML : 'Contenu par défaut';
+    const htmlContent = userField ? userField.innerHTML : 'https://i.imgur.com/C3v7rCi.png';
 
+    const icon2Post = post.querySelector('.iconmood');
+    const userField = post.querySelector('.user_field.field-icon-profil2 .field_content');
+    const htmlContent = userField ? userField.innerHTML : 'https://i.imgur.com/C3v7rCi.png';
+    
     iconPost.innerHTML = htmlContent;
+    icon2Post.innerHTML = htmlContent;
     post.querySelector('.champ_pronom').textContent = pronomText;
     post.querySelector('.champ_tw').textContent = TwText;
     post.querySelector('.champ_feat').textContent = FeatText;
