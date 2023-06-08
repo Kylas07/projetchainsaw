@@ -118,7 +118,6 @@ z-index: 100;
     grid-template-columns: auto 150px;
   padding: 40px;
   height: 100%;
-    align-items: baseline;
 }
 
 .entete_rp.v3 {
