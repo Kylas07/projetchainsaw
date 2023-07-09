@@ -1,0 +1,141 @@
+.fichepfln {  background:url(https://i.imgur.com/Q0fUHcj.png);
+  height:850px;
+  width:670px;
+  background-size:cover;
+      font-family: "Manrope";
+}
+
+.tabs-contents > div {
+  display:none;
+}
+
+.tabs-selector {
+      display: flex;
+    place-content: center;
+    gap: 20px;
+    margin-top: -15px;
+}
+
+.tabs-selector > a {
+    color: var(--accentClr);
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 100%;
+    text-align-last: center;
+    display: flex;
+    place-content: center;
+    align-items: center;
+} 
+
+.tabsfiche {
+  height:725px;
+}
+.contfichep {
+    height: 685px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contfichep div > img {
+object-fit: cover;
+  height: 320px;
+}
+
+.infopersofiche {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-items: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.infopersofiche > span {
+  padding: 5px 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--accentClr2) 0%, var(--accentClr) 100%);
+    color: var(--neutral);
+  font-size: 16px;
+font-weight: 700;
+  width: 180px;
+  text-align-last: center;
+}
+
+.infopersofiche > span:nth-of-type(7) {
+grid-column-end: span 2;
+    display: grid;
+      width: 390px;
+    place-items: center;
+}
+
+.txtfiche > div {
+border-radius: 10px;
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.txtfiche > div > span {
+      background: -webkit-linear-gradient(0deg, rgba(80, 119, 119, 1)0%, rgba(199, 157, 75, 1)10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+
+.collapsingskill {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
+    margin-top: -16px;
+    text-align: justify;
+}
+
+.collapsingskill > div {
+    overflow: hidden;
+    background: #F1F1F1;
+    padding: 0 15px;
+}
+
+.collapsingskill.open{
+  grid-template-rows: 1fr;
+}
+
+.skillsfiche {
+    background: -webkit-linear-gradient(0deg, rgba(80, 119, 119, 1)0%, rgba(199, 157, 75, 1)90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, #507777 0%, #C79D4B 59%);
+    border-image-slice: 1;
+transition: background 0.3s, color 0.3s;
+}
+
+.skillss:hover > .skillsfiche {
+    background: -webkit-linear-gradient(0deg, rgba(80, 119, 119, 1)0%, rgba(199, 157, 75, 1)30%);
+    color: black;
+    -webkit-text-fill-color: unset;
+transition: background 0.3s, color 0.3s;
+}
+.histoirefiche > div {
+  border-radius: 10px;
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
