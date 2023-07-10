@@ -125,32 +125,36 @@ font-weight: 700;
 text-transform: uppercase;
 }
 
-
-.collapsingskill {
+  /* Votre CSS existant */
+  .collapsingskill {
     padding: 1rem;
     border-radius: 0.5rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 0fr;
-    grid-template-rows: 0fr;
-    -webkit-transition: grid-template-rows 500ms;
-    -o-transition: grid-template-rows 500ms;
-    transition: grid-template-rows 500ms;
-    transition: grid-template-rows 500ms, -ms-grid-rows 500ms;
     margin-top: -16px;
     text-align: justify;
-}
+    
+  display: -ms-grid;
+    
+  display: grid;
+  -ms-grid-rows: 0fr;
+  grid-template-rows: 0fr;
+  -webkit-transition: grid-template-rows 500ms;
+  -o-transition: grid-template-rows 500ms;
+  transition: grid-template-rows 500ms;
+  transition: grid-template-rows 500ms, -ms-grid-rows 500ms;
+  }
 
-.collapsingskill > div {
+  .collapsingskill > div {
     overflow: hidden;
     background: #F1F1F1;
     padding: 0 15px;
-}
+  }
 
-.collapsingskill.open{
+.collapsingskill:hover {
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
 }
+
+
 
 .skillsfiche {
     background: -webkit-linear-gradient(0deg, rgba(80, 119, 119, 1)0%, rgba(199, 157, 75, 1)90%);
