@@ -64,7 +64,20 @@
 }
 
 .infopersofiche {
-    display: -ms-grid;
+
+  display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 48% 10px 48%;
+    grid-template-columns: repeat(2, 48%);
+    justify-items: center;
+    align-self: center;
+    -webkit-box-align: center;
+    place-self: end;
+    -ms-flex-align: center;
+    /* align-items: end; */
+    text-transform: uppercase;
+    gap: 10px;
+ /**   display: -ms-grid;
     display: grid;
     -ms-grid-columns: 48% 10px 48%;
     grid-template-columns: repeat(2, 48%);
@@ -73,7 +86,7 @@
         -ms-flex-align: center;
             align-items: center;
     text-transform: uppercase;
-    gap: 10px;
+    gap: 10px;***/
 }
 
 .infopersofiche > span {
