@@ -652,6 +652,7 @@ transition:1s ease;
 }
 
 .wombat-aside .user_profile {
+    visibility: hidden;     position: absolute;
 }
 
 .discord_gimmik {
