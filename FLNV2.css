@@ -815,3 +815,36 @@ background-image: url(https://i.imgur.com/l7BUmMl.png);
   -o-transition:1s ease;
   transition:1s ease;
 }
+
+
+bigbutton1 {
+    background: var(--accentClr);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: var(--neutral);
+    font-weight: bold
+}
+bigbutton2 {
+    background: var(--accentClr2);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: var(--neutral);
+    font-weight: bold
+}
+
+bigbutton3 {
+    background: linear-gradient(90deg, #C79D4B 0%, #507777 100%);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: var(--neutral);
+    font-weight: bold
+}
+
+b3 {
+    font-weight: 700;
+    background: linear-gradient(90deg, #C79D4B 0%, #507777 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
