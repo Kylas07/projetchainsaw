@@ -625,7 +625,7 @@ detail {
 }
 
   /* Style for the "scale(0)" radio button */
-  #showHideCheckboxScale0:checked + label[for="showHideCheckboxScale0"] + .comptpok {
+  input#showHideCheckboxScale0:checked + label[for="showHideCheckboxScale0"] + .comptpok {
     transform: scale(0);
     transition: 1s ease all;
     padding: 20px;
@@ -633,10 +633,9 @@ detail {
     border-radius: 10px;
   }
 
-#showHideCheckboxScale0:checked + label {display:none;}
-#showHideCheckboxScale1:checked + label {display:none;}
-  /* Style for the "scale(1)" radio button */
-  #showHideCheckboxScale1:checked + label[for="showHideCheckboxScale1"] + .comptpok {
+input#showHideCheckboxScale0:checked + label {display:none;}
+input#showHideCheckboxScale1:checked + label {display:none;}
+  input#showHideCheckboxScale1:checked + label[for="showHideCheckboxScale1"] + .comptpok {
     transform: scale(1);
     transition: 1s ease all;
     padding: 20px;
