@@ -254,6 +254,9 @@ z-index: 4;
 
 
 
+
+
+
 .ficherplnvance {
   background:white;
   display:flex;
@@ -625,17 +628,17 @@ detail {
 }
 
   /* Style for the "scale(0)" radio button */
-  input#showHideCheckboxScale0:checked + label[for="showHideCheckboxScale0"] + .comptpok {
+  input#showHideCheckboxScale0:checked ~ .comptpok {
     transform: scale(0);
     transition: 1s ease all;
     padding: 20px;
     background: #252525;
     border-radius: 10px;
   }
-
-input#showHideCheckboxScale0:checked + label {display:none;}
-input#showHideCheckboxScale1:checked + label {display:none;}
-  input#showHideCheckboxScale1:checked + label[for="showHideCheckboxScale1"] + .comptpok {
+/***#tab1:checked ~ #content1 **/
+input#showHideCheckboxScale0:checked ~ label[for="showHideCheckboxScale0"]  {display:none;}
+input#showHideCheckboxScale1:checked ~ label[for="showHideCheckboxScale1"]  {display:none;}
+  input#showHideCheckboxScale1:checked ~ .comptpok {
     transform: scale(1);
     transition: 1s ease all;
     padding: 20px;
