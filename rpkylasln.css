@@ -222,8 +222,6 @@ kylaskewl2{
 /*********************/
 
 
-
-
 /*********************/
 
 
@@ -598,21 +596,28 @@ detail {
     place-content: center;
 }
 
-  input#showHideCheckbox:checked + label + .comptpok {
-    display:block;
+  /* Style for the "scale(0)" radio button */
+  #showHideCheckboxScale0:checked + label[for="showHideCheckboxScale0"] + .comptpok {
+    transform: scale(0);
     transition: 1s ease all;
     padding: 20px;
     background: #252525;
     border-radius: 10px;
   }
 
-  #showHideCheckbox {
-    display: none;
+#showHideCheckboxScale0:checked + label {display:none;}
+#showHideCheckboxScale1:checked + label {display:none;}
+  /* Style for the "scale(1)" radio button */
+  #showHideCheckboxScale1:checked + label[for="showHideCheckboxScale1"] + .comptpok {
+    transform: scale(1);
+    transition: 1s ease all;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   .comptpok {
     transform-origin: top;
-    display:none;
+    transform: scale(0);
     position: absolute;
     transition: 1s ease all;
   }
@@ -624,9 +629,10 @@ color: white;
     border-radius: 5px;
     display: flex;
     margin-bottom: 10px;
-    width: 40px;
+    width: 60px;
     font-weight: bold;
     margin-top: -56px;
     margin-left: 200px;
+      justify-content: center;
     transition: all ease 1s
 }
