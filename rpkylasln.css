@@ -223,6 +223,11 @@ kylaskewl2{
 
 
 
+
+/*********************/
+
+
+
 .ficherplnvance {
   background:white;
   display:flex;
@@ -592,25 +597,24 @@ detail {
     border-radius: 0 0px 10px 10px;
     place-content: center;
 }
-  /* CSS */
+
+  input#showHideCheckbox:checked + label + .comptpok {
+    display:block;
+    transition: 1s ease all;
+    padding: 20px;
+    background: #252525;
+    border-radius: 10px;
+  }
+
   #showHideCheckbox {
     display: none;
   }
 
   .comptpok {
-transform-origin: top;
-    scale: 0;
-    position:absolute;
+    transform-origin: top;
+    display:none;
+    position: absolute;
     transition: 1s ease all;
-  }
-
-  /* Afficher .comptpok lorsque la case à cocher est cochée */
-  #showHideCheckbox:checked + label + .comptpok {
-    scale: 1;
-    transition: 1s ease all;
-    padding: 20px;
-    background: #252525;
-    border-radius: 10px;
   }
 
 .tabskill {
