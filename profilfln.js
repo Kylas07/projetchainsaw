@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateInscriptionField = post.querySelector('.user_field.field-date-dinscription .field_content');
     const dateInscriptionText = dateInscriptionField ? dateInscriptionField.textContent : 'Date d\'inscription par défaut';
     
-    const pointsField = post.querySelector('.user_field.field-points .field_content');
+    const pointsField = post.querySelector('.user_field.field-experience .field_content');
     const pointsText = pointsField ? pointsField.textContent : '0xp';
     
-    const argentField = post.querySelector('.user_field.field-argent .field_content');
+    const argentField = post.querySelector('.user_field.field-quartz .field_content');
     const argentText = argentField ? argentField.textContent : '0$';
     
     const tierField = post.querySelector('.user_field.field-tier .field_content');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const featField = post.querySelector('.user_field.field-feat-credits .field_content');
     const FeatText = featField ? featField.textContent : 'Feat par défaut';
     
-    const runesField = post.querySelector('.user_field.field-runes-actives .field_content');
+    const runesField = post.querySelector('.user_field.field-tags .field_content');
     const RunesText = runesField ? runesField.innerHTML : 'Runes par défaut';
     
     const iconPost = post.querySelector('.iconpost');
