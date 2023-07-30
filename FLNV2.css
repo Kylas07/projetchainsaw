@@ -357,7 +357,7 @@ grid-template-columns: 300px auto;
 .lateprofile > .latpost_profile .post_pseudo a {
     font-family: 'Forum';
     font-weight: 400;
-    font-size: 64px;
+    font-size: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
