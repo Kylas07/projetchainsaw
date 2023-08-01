@@ -27,20 +27,22 @@
 }
 
 .tabs-selector > a {
-    color: var(--accentClr);
+color: var(--accentClr2);
+    background: var(--text);
+    font-weight: bolder;
     width: 30px;
     height: 30px;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 100%;
     -moz-text-align-last: center;
-         text-align-last: center;
+    text-align-last: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     place-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 } 
 
 .tabsfiche {
