@@ -11,6 +11,9 @@
   width:670px;
   background-size:cover;
       font-family: "Manrope";
+                display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .tabs-contents > div {
@@ -112,6 +115,10 @@ grid-column-end: span 2;
     display: grid;
       width: 390px;
     place-items: center;
+}
+
+.txtfiche {
+      margin: 20px 0;
 }
 
 .txtfiche > div {
