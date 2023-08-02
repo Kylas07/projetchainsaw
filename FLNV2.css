@@ -229,7 +229,7 @@ width: 250px;
 
 .profil_contact {
     position: sticky;
-    top: 500px;
+   top: 450px;
 }
 /* Lien "@" de mention */
 a.fa-mention {}
@@ -342,7 +342,7 @@ grid-template-columns: 300px auto;
   margin-top: 10px;
     text-align: center;
     position: sticky;
-    top: 70px;
+    top: 20px;
 }
 
 .lateprofile > .latpost_profile {
