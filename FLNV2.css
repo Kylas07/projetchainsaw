@@ -409,11 +409,11 @@ display: flex;
         margin-top: 10px;
 }
 .cont_late img {
-    width: 195px;
-    height: 50px;
+width: 195px;
+    height: 83px;
     -o-object-fit: cover;
-       object-fit: cover;
-    border: 5px solid var(--neutral);
+    object-fit: cover;
+    border: 4px solid var(--neutralDark);
     border-radius: 10px;
 }
 
