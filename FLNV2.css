@@ -854,3 +854,107 @@ b3 {
     background-clip: text;
     text-fill-color: transparent;
 }
+
+
+
+.entete_adm {
+      display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.entete_adm > span {
+      margin: 0 100px;
+  border-radius: 10px;
+background: linear-gradient(132deg, #507777 0%, #C79D4B 100%);
+color: #FFF;
+text-align: center;
+font-family: Forum;
+font-size: 40px;
+padding:2px 20px;
+}
+
+.post_adm {
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+    width: 100%;
+}
+
+.post_adm > div {
+    background: #FCFCFC;
+  padding:10px;
+display:flex;
+  flex-direction:column;
+  min-height:110px;
+}
+
+.imgstaff_post {
+      position: absolute;
+    margin-top: -90px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-size: cover;
+}
+
+.tags_given {
+    gap: 40px;
+  flex-direction:row!important;
+}
+
+.tags_given > div:nth-of-type(1) {
+display: flex;
+    transform: rotate(180deg);
+    writing-mode: tb-rl;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background: #F1F1F1;
+}
+
+.tags_given > div:nth-of-type(2) {
+      align-self: center;
+    overflow: auto;
+}
+
+.tags_given > div span {
+  text-align: center;
+font-family: Manrope;
+font-weight: 800;
+text-transform: uppercase;
+  background: linear-gradient(180deg, #507777 0%, #C79D4B 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+span.comms_adm {
+border-radius: 5px;
+background: #F1F1F1;
+color: #1E1E1E;
+font-family: Manrope;
+font-weight: 800;
+text-transform: uppercase;
+  padding:10px;
+  width:200px;
+  margin-bottom:10px;
+}
+.liens_adm {
+    padding: 10px 50px!important;
+  display:flex;
+  line-height:2;
+    text-align: center;
+      place-content: center;
+}
+.liens_adm a {
+  color: #507777;
+text-align: center;
+  padding:2px 10px;
+  text-decoration:none;
+font-family: Manrope;
+font-weight: 700;
+text-transform: uppercase;
+  border-radius: 5px;
+background: #F1F1F1;
+}
