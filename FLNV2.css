@@ -650,8 +650,8 @@ transition:1s ease;
 
 .container#wombat {
     background-size: auto;
-    background:-webkit-gradient(linear, left top, left bottom, from(#507777), to(#00000070)), url(https://i.imgur.com/hCcDeuf.png);
     background:-o-linear-gradient(top, #507777, #00000070), url(https://i.imgur.com/hCcDeuf.png);
+    background:-webkit-gradient(linear, left top, left bottom, from(#507777), to(#00000070)), url(https://i.imgur.com/hCcDeuf.png);
     background:linear-gradient(180deg, #507777, #00000070), url(https://i.imgur.com/hCcDeuf.png);
   padding: 10px;
     border-radius: 5px;
@@ -839,6 +839,8 @@ bigbutton2 {
 }
 
 bigbutton3 {
+    background: -webkit-gradient(linear, left top, right top, from(#C79D4B), to(#507777));
+    background: -o-linear-gradient(left, #C79D4B 0%, #507777 100%);
     background: linear-gradient(90deg, #C79D4B 0%, #507777 100%);
     padding: 5px 15px;
     border-radius: 5px;
@@ -848,6 +850,8 @@ bigbutton3 {
 
 b3 {
     font-weight: 700;
+    background: -webkit-gradient(linear, left top, right top, from(#C79D4B), to(#507777));
+    background: -o-linear-gradient(left, #C79D4B 0%, #507777 100%);
     background: linear-gradient(90deg, #C79D4B 0%, #507777 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -858,14 +862,20 @@ b3 {
 
 
 .entete_adm {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
 }
 
 .entete_adm > span {
       margin: 0 100px;
   border-radius: 10px;
+background: -o-linear-gradient(318deg, #507777 0%, #C79D4B 100%);
 background: linear-gradient(132deg, #507777 0%, #C79D4B 100%);
 color: #FFF;
 text-align: center;
@@ -875,8 +885,13 @@ padding:2px 20px;
 }
 
 .post_adm {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction:column;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
   gap:40px;
     width: 100%;
 }
@@ -884,8 +899,13 @@ padding:2px 20px;
 .post_adm > div {
     background: #FCFCFC;
   padding:10px;
+display:-webkit-box;
+display:-ms-flexbox;
 display:flex;
-  flex-direction:column;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
   min-height:110px;
 }
 
@@ -900,21 +920,37 @@ display:flex;
 
 .tags_given {
     gap: 40px;
-  flex-direction:row!important;
+  -webkit-box-orient:horizontal!important;
+  -webkit-box-direction:normal!important;
+      -ms-flex-direction:row!important;
+          flex-direction:row!important;
 }
 
 .tags_given > div:nth-of-type(1) {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-    transform: rotate(180deg);
-    writing-mode: tb-rl;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-writing-mode: tb-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: tb-rl;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 5px;
     background: #F1F1F1;
 }
 
 .tags_given > div:nth-of-type(2) {
-      align-self: center;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
     overflow: auto;
 }
 
@@ -923,6 +959,8 @@ display: flex;
 font-family: Manrope;
 font-weight: 800;
 text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#507777), to(#C79D4B));
+  background: -o-linear-gradient(top, #507777 0%, #C79D4B 100%);
   background: linear-gradient(180deg, #507777 0%, #C79D4B 100%);
 background-clip: text;
 -webkit-background-clip: text;
@@ -942,6 +980,8 @@ text-transform: uppercase;
 }
 .liens_adm {
     padding: 10px 50px!important;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   line-height:2;
     text-align: center;
