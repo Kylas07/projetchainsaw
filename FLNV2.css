@@ -219,7 +219,7 @@ max-width: 200px;
     -o-object-fit: cover;
        object-fit: cover;
 }
-.post_avatar a img {
+.post_avatar img {
 width: 250px;
     height: 350px;
     -o-object-fit: cover;
@@ -635,7 +635,7 @@ transition:1s ease;
 }
 
 
-.post_avatar a {
+.post_avatar img {
     -ms-grid-column:1;
     grid-column:1;
   -ms-grid-row:1;
