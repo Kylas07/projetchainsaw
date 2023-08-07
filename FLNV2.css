@@ -343,6 +343,7 @@ grid-template-columns: 300px auto;
     text-align: center;
     position: sticky;
     top: 20px;
+    justify-content: center;
 }
 
 .lateprofile > .latpost_profile {
