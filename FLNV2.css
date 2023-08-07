@@ -219,6 +219,14 @@ max-width: 200px;
     -o-object-fit: cover;
        object-fit: cover;
 }
+
+.post_avatar a {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+
+}
 .post_avatar img {
 width: 250px;
     height: 350px;
