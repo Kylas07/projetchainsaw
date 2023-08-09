@@ -66,6 +66,7 @@ color: var(--accentClr2);
 -o-object-fit: cover;
    object-fit: cover;
   height: 320px;
+  width: 200px;
 }
 
 .infopersofiche {
