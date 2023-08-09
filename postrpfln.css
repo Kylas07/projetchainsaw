@@ -207,3 +207,14 @@ margin-top: 15px;
     text-align: right;
     margin-bottom: 45px;
 }
+
+b3 {
+    font-weight: 700;
+    background: -webkit-gradient(linear, left top, right top, from(#C79D4B), to(#507777));
+    background: -o-linear-gradient(left, #C79D4B 0%, #507777 100%);
+    background: linear-gradient(90deg, #C79D4B 0%, #507777 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
