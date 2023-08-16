@@ -1,4 +1,4 @@
-  
+
   .PA_TKT {
 margin: 50px auto auto 0;
     height: 450px;
@@ -99,19 +99,19 @@ text-fill-color: transparent;
 }
 
 .a1:first-child .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.imgur.com/eIL3gOB.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--imgcat1);
 }
 
 .a1:nth-child(2) .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.imgur.com/VPczLCu.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  var(--imgcat2);
 }
 
 .a1:nth-child(3) .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.imgur.com/t9OcqPt.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  var(--imgcat3);
 }
 
 .a1:nth-child(4) .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.imgur.com/rsSbhfG.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  var(--imgcat4);
 }
 
 .a1 {
@@ -492,7 +492,7 @@ h11 {
 }
 
 .scenar_pa .maj {
-     background: #131313;
+     background: var(--neutral);
     width: fit-content;
     padding: 10px 10px 0px 10px;
     border-radius: 10px;
