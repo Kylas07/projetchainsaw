@@ -124,7 +124,7 @@ padding: 15px;
 
 .fastlinkcat span a:nth-of-type(even):hover {  
 background: var(--contrast);
-    color: var(--FAM-chatBackground);
+    color: var(--neutralDarker);
 }
 
 .fastlinkcat span a:nth-of-type(even) {
