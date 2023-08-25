@@ -22,7 +22,7 @@ grid-row: 1;
 }
 
 .img_caat {
-    background-image: url('https://i.imgur.com/FygUand.png');
+    background-image: var(--gbimg);
       position: absolute;
 /****    width: 470px; ***/
     width:40vw;
@@ -44,13 +44,13 @@ display: flex;
 }
 
 .circle2 {
-  box-shadow: 1px 1px 1px 35px black;
+box-shadow: 1px 1px 1px 35px var(--neutralDarker);
     width: 380px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), #080808), url(https://i.imgur.com/jre27Jl.jpg);
+    background: linear-gradient(0deg, var(--transp), var(--neutral)), var(--imgcat1);
     background-size: cover;
     height: 380px;
     margin-top: 150px;
-  border-radius: 100%;
+    border-radius: 100%;
 }
 
 .descr_cat {
