@@ -343,7 +343,7 @@ display: flex;
     place-content: center;
 }
 
-[data-color-scheme="dark"].header1 {
+[data-color-scheme="dark"] .header1 {
   background: var(--header1);
       background-position-x: center;
     width: 100%;
