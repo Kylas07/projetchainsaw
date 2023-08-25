@@ -45,6 +45,8 @@
 }
 
 .FLN_rp {
+    width: 780px;
+    margin: auto;
       padding: 50px;
   color:var(--text);
   text-align:justify;
