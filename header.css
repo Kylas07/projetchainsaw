@@ -38,7 +38,7 @@ display: flex;
 .main_TKT {
       z-index: 99;
   position: relative;
-  backdrop-filter: brightness(0.5) blur(3px);
+ /***** backdrop-filter: brightness(0.5) blur(3px);****/
 }
 .stage {
     z-index: 90;
