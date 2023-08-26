@@ -99,19 +99,18 @@ text-fill-color: transparent;
 }
 
 .a1:first-child .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--imgcat1);
-}
+      background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat1);
 
 .a1:nth-child(2) .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  var(--imgcat2);
+      background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat1);
 }
 
 .a1:nth-child(3) .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  var(--imgcat3);
+      background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat1);
 }
 
 .a1:nth-child(4) .divf {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  var(--imgcat4);
+      background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat1);
 }
 
 .a1 {
@@ -261,7 +260,7 @@ height: 334px;
     border-radius: 10px;
     margin-left: 300px;
     background-size: cover!important;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--imgcat3);
+    background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat3);
 }
 
 
@@ -455,7 +454,7 @@ grid-column: 1/2!important;
     height: 320px;
     border-radius: 10px;
     background-size: cover!important;
-background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--imgcat3);
+background:linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat3);
 }
 
 .a3:hover > .divf {
