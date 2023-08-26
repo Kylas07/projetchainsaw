@@ -40,7 +40,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 .a1:hover > .divf {
   transition: 1s;
     transform: scale(1);
-    filter: blur(2px) brightness(0.5);
+    filter: var(--filterzhov);
 }
 
 .a1:hover > .divtxt {
@@ -90,7 +90,7 @@ text-fill-color: transparent;
   grid-column: 1/2;
   transition: 1s;
       transform: scale(1.2);
-  filter: blur(0px) brightness(0.8);
+  filter: var(--filterz);
   width: 100%;
     height: 320px;
         border-radius: 10px;
@@ -261,7 +261,7 @@ height: 334px;
     border-radius: 10px;
     margin-left: 300px;
     background-size: cover!important;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://cdnb.artstation.com/p/assets/images/images/002/345/251/large/andreas-rocha-sacredshadows.jpg?1460555681);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--imgcat3);
 }
 
 
@@ -450,7 +450,7 @@ width:0px;
 grid-column: 1/2!important;
     transition: 1s;
     transform: scale(1.2);
-    filter: blur(1px) brightness(0.5);
+    filter: var(--filterz);
     width: 100%;
     height: 320px;
     border-radius: 10px;
@@ -460,7 +460,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(h
 
 .a3:hover > .divf {
       transform: scale(1);
-    filter: blur(0px) brightness(0.2);
+    filter: var(--filterzhov);
   transition:1s;
 
 }
