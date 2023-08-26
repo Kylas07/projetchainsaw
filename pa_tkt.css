@@ -100,7 +100,7 @@ text-fill-color: transparent;
 
 .a1:first-child .divf {
       background: linear-gradient(0deg, var(--transpacc), var(--transp)), var(--imgcat1);
-
+}
 .a1:nth-child(2) .divf {
       background: linear-gradient(0deg, var(--transpacc), var(--transp)), var(--imgcat2);
 }
