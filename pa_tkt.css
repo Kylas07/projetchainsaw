@@ -99,18 +99,18 @@ text-fill-color: transparent;
 }
 
 .a1:first-child .divf {
-      background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat1);
+      background: linear-gradient(0deg, var(--transpacc), var(--transp)), var(--imgcat1);
 
 .a1:nth-child(2) .divf {
-      background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat1);
+      background: linear-gradient(0deg, var(--transpacc), var(--transp)), var(--imgcat2);
 }
 
 .a1:nth-child(3) .divf {
-      background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat1);
+      background: linear-gradient(0deg, var(--transpacc), var(--transp)), var(--imgcat3);
 }
 
 .a1:nth-child(4) .divf {
-      background: linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat1);
+      background: linear-gradient(0deg, var(--transpacc), var(--transp)), var(--imgcat4);
 }
 
 .a1 {
@@ -264,7 +264,8 @@ height: 334px;
 }
 
 
-input[type="radio"]#tkt_tabpa1 , input[type="radio"]#tkt_tabpa2 ,
+/**********
+  input[type="radio"]#tkt_tabpa1 , input[type="radio"]#tkt_tabpa2 ,
 input[type="radio"]#tkt_tabpa3 , 
 input[type="radio"]#tkt_tabpa4{
   display: none;
@@ -292,6 +293,9 @@ input[type="radio"]#tkt_tabpa1 + label:hover, input[type="radio"]#tkt_tabpa2 + l
   cursor:pointer;
 }
 
+  
+  
+  **************/
 .tt_pa {
 letter-spacing: 2px;
     font-size: 30px;
@@ -454,7 +458,7 @@ grid-column: 1/2!important;
     height: 320px;
     border-radius: 10px;
     background-size: cover!important;
-background:linear-gradient(0deg, var(--transpacc),var(--transp)), var(--imgcat3);
+background:linear-gradient(0deg, var(--transpacc), var(--transp)), var(--imgcat3);
 }
 
 .a3:hover > .divf {
