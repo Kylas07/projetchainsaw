@@ -78,7 +78,7 @@ margin-top: 250px;
     grid-column: 1/2;
     z-index: 9;
     font-weight: 900;
-  background: linear-gradient(90deg, #FFFFFF -19.35%, var(--accentClr) 77.28%);
+  background: linear-gradient(90deg, var(--neutral) -19.35%, var(--accentClr) 99.28%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
@@ -484,7 +484,7 @@ background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--
 
 h11 {
  font-weight: 900;
-    background: linear-gradient(90deg, #FFFFFF -19.35%, var(--accentClr) 77.28%);
+    background: linear-gradient(90deg, var(--contrast) -19.35%, var(--accentClr) 77.28%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -520,6 +520,6 @@ padding-right: 5px;
     font-weight: bold;
     padding: 2px 5px;
     border-radius: 25px;
-    color: black;
+    color: var(--neutral);
     margin: 0 2px;
 }
