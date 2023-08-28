@@ -438,5 +438,758 @@ height: 100vh;
     margin-left: -10vw;
     position: absolute;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;}
+
+
+/*** --------------------------------------- ***/
+/*** BOUTONS D'INTERACTION ET BARRE DE TEXTE ***/
+
+/* BARRE DE TEXTE ---*/
+input[type="text"],
+input[type="password"],
+input.inputbox {
+    border: none;
+    border-radius: 5px;
+    background: var(--neutralDark);
+    font-size: var(--normal-size);
+    color: var(--contrastLight);
+    padding: 2px 6px;
+}
+
+
+/* BOUTONS D'INTERACTION --- *
+ * Envoyer, prévisualiser, sauvegarder, aller,... */
+input[type="submit"],
+input[type="button"],
+input[type="hidden"],
+input[type="reset"] {
+    font-size: var(--normal-size);
+    padding: 2px 8px !important;
+    border-radius: 5px;
+    background: var(--neutralDarker);
+    color: var(--contrastLight);
+    font-weight: 600;
+    border: none;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="hidden"]:hover,
+input[type="reset"]:hover {
+    color: var(--accentClr)
+}
+
+.submit-buttons {text-align: center;}
+
+.quickmod {margin-bottom: 20px;}
+
+/* MENUS DEROULANTS --- */
+select {
+    background: transparent;
+    border: var(--border);
+    border-radius: 5px;
+    font-size: var(--normal-size);
+    padding: 1px 4px;
+    color: var(--textColor);
+}
+
+option {
+    background: var(--neutral);
+    border: var(--border);
+}
+
+
+/*** ------------------------------- ***/
+/*** EDITEUR DE TEXTE -------------- ***/
+/* Editeur de texte */
+.sceditor-container {
+    border: var(--border)!important;
+    
+}
+
+/* Barre d'outils de l'éditeur de texte*/
+div.sceditor-toolbar {
+    background: var(--neutral)!important;
+    border-bottom: var(--border)!important;
+}
+
+/* Conteneur des groupes d'outils */
+div.sceditor-group {
+    background: var(--neutralDark)!important;
+    border-bottom: var(--border)!important;
+}
+
+/* Bouton d'un outil */
+a.sceditor-button {
+    height: 26px !important;
+    /*ne pas retirer*/
+    width: 26px !important;
+    /*ne pas retirer*/
+}
+
+/* Conteneur de la zone de texte */
+.sceditor-container iframe, .sceditor-container textarea {
+    background-color: var(--neutral)!important;
+    /*ne pas supprimer*/
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    /*ne pas supprimer*/
+    min-height: 250px !important;
+      color: var(--textColor)!important;
+}
+
+
+/*Boîte Smiley*/
+body#sce_smilies_body {
+    background: transparent!important;
+}
+
+
+/* Autre champs de texte */
+textarea {
+    background: var(--neutralDark);
+    border: var(--border);
+    color: var(--textColor)!important;
+}
+
+
+/*** ------------------------------- ***/
+/*** PAGINATIONS -------------------- ***/
+
+.pagination {}
+
+/*lien unique vers les pages numérotées*/
+.pagination span a {
+    font-size: var(--little-size);
+}
+
+/*survol des liens uniques des pages*/
+.pagination span a:hover {font-weight: 600}
+
+/*lien actif : page sur laquelle vous vous trouvez */
+.pagination span strong {
+    background-color: var(--neutralDark);
+    border-radius: 3px;
+    padding: 1px 4px;
+}
+
+/*suppression de l'image-lien "aller à la page suivante" */
+.page-topic span a:last-child,
+.pag-img {
+    display: none;
+}
+
+
+/*** ------------------------------- ***/
+/*** ELEMENTS ESTHETIQUES ---------- ***/
+
+/* Contenur général qui sert généralement de fond et/ou de contour*/
+.container {
+    padding: 10px;
+    border-radius: 5px;
+  background:var(--transp);
+  backdrop-filter: blur(10px);
+  border:1px solid var(--neutralDark);
+}
+
+/* Barre de séparation */
+.separator {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--neutralDark);
+    clear: both;
+    height: 1px;
+    width: 100%;
+}
+
+/* Conteneur moins large (les historiques des messages essentiellement) */
+.wrapped {
+    width: 80%;
+    margin: 10px auto;
+    clear: both;
+}
+
+/* Image/avatar réduit */
+.mini_img img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: var(--neutralDark);
+}
+
+
+/* Permet d'aligner un élément à droite ou à gauche */
+.right {
+    float: right
+}
+
+.left {
+    float: left
+}
+
+.clear {
+    clear: both
+}
+
+/* Barre de gestion 
+ * Contient des boutons ou des liens spéciaux */
+.links_bar {
+    background: var(--neutralDark);
+      padding: 10px;
+    border-radius: 5px;
+    margin: 25px 0;
+    clear: both;
+}
+
+.linksa_bar  {
+  padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: -37px 0;
+    width: 1000px;
+    clear: both;
+    place-content: end;}
+
+.linksa_bar span a#lastvisit_posts {
+color: var(--FAM-textareaBackground);
+    background: var(--FAM-quoteBackground);
+    padding: 2px 10px;
+    border-radius: 10px;
+  transition:0.5s;
+}
+
+.linksa_bar span a#lastvisit_posts:hover {
+background: var(--FAM-textareaBackground);
+color: var(--FAM-quoteBackground);
+}
+
+.linksa_bar span a#posts_unanswered {
+color: var(--accentClr);
+    background: var(--neutralDarker);
+    padding: 2px 10px;
+    border-radius: 10px;
+  transition:0.5s;
+}
+
+.linksa_bar span a#posts_unanswered:hover {
+     background:var(--accentClr);
+   color:var(--neutralDarker);
+}
+/* supprime si vide */
+.links_bar:empty {
+    display: none
+}
+
+/* Lien spécial mis en avant */
+.specials_links a,
+a.specials_links {
+    background: var(--neutralDark);
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+/* Suppression des liens vides */
+.specials_links a:empty,
+a.specials_links:empty {
+    display: none
+}
+
+
+
+
+
+
+/****** ------------------------------------------------------------------------------ 
+ ****** ENTETE DU FORUM --------------------------------------------------------------
+ ****** Tous les éléments qui s'affichent en tête de toutes les pages ---------------- ******/
+
+
+/*** ------------------------------- ***/
+/*** TOOLBAR ----------------------- ***/
+
+/* Toute la toolbar */
+#fa_toolbar {
+    font-size: var(--little-size);
+    font-family: var(--font);
+}
+
+/* Supression de la barre de recherche, des boutons sociaux et des flèches */
+#fa_search,
+#fa_share,
+#fa_hide {
+    display: none
+}
+
+/* Logo Forumactif : 
+ * ATTENTION, il est techniquement interdit de supprimer de logo de FA. 
+ * Techniquement. Faites-en donc ce que vous voulez. */
+#fa_left {
+    display: none
+}
+
+/* Conteneur du lien de bienvenue et notification */
+#fa_right {
+    position: relative;
+    margin-top: 5px;
+    margin-right: 5px;
+    background: var(--neutralDark);
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+/* LIENS DE LA TOOLBAR ---*/
+
+/* Tous les liens : connexion, s'enregistrer, bienvenue (pseudo), notification*/
+#fa_welcome,
+#fa_notifications,
+#fa_right a.rightHeaderLink[href*="/login"],
+#fa_right a.rightHeaderLink[href*="/register"] {
+    cursor: pointer;
+    padding: 4px 6px;
+}
+
+/* Lien "Connexion" */
+#fa_right a.rightHeaderLink[href*="/login"] {}
+
+/* Lien "S'enregistrer" */
+#fa_right a.rightHeaderLink[href*="/register"] {}
+
+/* Lien "Bienvenue (pseudo)" */
+#fa_welcome {}
+
+/* Lien "notification"*/
+#fa_notifications {}
+
+
+/* liens "bienvenue" et "notification" [AU CLIC] */
+#fa_right.welcome #fa_menu #fa_welcome,
+#fa_toolbar > #fa_right.notification > #fa_notifications {
+    background: var(--neutralDark);
+    border-radius: 5px;
+}
+
+
+/* MENU bienvenue [ET] liste des notifications */
+ul#fa_menulist,
+ul#notif_list {
+    border: var(--border);
+    background: var(--neutralDark);
+    border-radius: 5px;
+    right: 0;
+    left: initial !important;
+    top: 45px;
+    z-index: 999;
+    position: absolute;
+    display: none;
+}
+
+
+/* MENU BIENVENUE ---*/
+/* conteneur */
+#fa_menulist {
+    width: 350px;
+}
+
+/* Colonne gauche du menu de bienvenue avec avatar */
+#fa_usermenu {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    min-height: 250px
+}
+
+/* Image de l'avatar dans le menu de bienvenue */
+#fa_usermenu img {
+    object-fit: cover;
+    object-position: center;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Liens du menu de bienvenue */
+#fa_menulist li {
+    margin: 10px 0;
+}
+
+/* Séparateur du menu de bienvenue */
+#fa_toolbar #fa_right .fa_separator {
+    margin: 5px 0 5px 150px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* LISTE DES NOTIFICATIONS ---*/
+/* conteneur*/
+#notif_list {
+    width: 380px;
+    padding: 5px;
+    flex-direction: column-reverse;
+}
+
+/* Ligne d'une notification */
+#notif_list li {
+    position: relative;
+    padding: 5px;
+    padding-right: 20px;
+    border-top: 1px solid var(--neutralDark);
+}
+
+#notif_list li:nth-last-child(2) {
+    border-top: none
+}
+
+
+/* Notifications non lues */
+#notif_list .unread {
+    background: var(--neutralDark);
+    font-weight: bold;
+}
+
+/* Bouton suppresion d'une notification */
+#fa_toolbar #fa_right #notif_list li a.delete {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
+/* Croix du bouton suppression */
+#fa_toolbar #fa_right #notif_list li a.delete:before {
+    content: "\f12a";
+    display: inline-block;
+    font-family: "Ionicons";
+    font-style: normal;
+    font-weight: normal;
+    color: #FF4F42;
+}
+
+/* Lien "voir toutes les notifications" */
+#notif_list .see_all {
+    background: var(--neutralDark);
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+    order: -1;
+}
+
+/* POPUP NOTIFICATION ---*/
+
+/* Placement du pop-up de nouvelle notification */
+#fa_toolbar #live_notif {
+    position: absolute;
+    top: 45px;
+    right: 0px !important;
+}
+
+/* Stylisation du pop-up */
+#fa_toolbar #live_notif .fa_notification {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+
+/* AVATAR TOOLBAR ---*/
+/* Conteneur de l'avatar toolbar */
+.fa_avatar {
+    position: absolute;
+    top: -1px;
+    left: -45px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+
+/* Image de l'avatar */
+.fa_avatar img {
+    object-fit: cover;
+    object-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+/*** ------------------------------- ***/
+/*** SWITCHEROO - Par Monomer ------ ***/
+/*** Gestionnaire de multicompte --- ***/
+
+:root {
+    --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.43, 0.09, 0.38, 2.56);
+}
+
+/* BARRE SWITCHEROO --- */
+/* BARRE --- */
+.switcheroo {
+    color: var(--textColor);
+    margin-top: 60px;
+}
+
+/* Positionnement des ronds */
+.switcheroo__squircles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+/* AFFICHAGE DES COMPTES ---*/
+
+/* Rond */
+.switcheroo__squircle {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: var(--neutralDark);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 5px solid transparent;
+    transition: border-radius 128ms var(--ease);
+}
+
+/* Rond au survol */
+.switcheroo__squircle:hover {
+    outline-color: var(--neutralDarker);
+    border-radius: 8px;
+}
+
+.switcheroo__squircle:hover img {
+    border-radius: 8px;
+}
+
+/* Conteneur de l'avatar */
+.switcheroo__avatar {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+/* Image de l'avatar */
+.switcheroo__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    transition: border-radius 128ms var(--ease);
+    position: relative;
+}
+
+/* Avatar du compte connecté */
+.switcheroo__squircle.active,
+.switcheroo__squircle.active img {
+    outline-color: var(--neutralDark);
+    cursor: default;
+}
+
+/* AJOUTER UN COMPTE ---*/
+/* button : ajouter un compte */
+.switcheroo__squircle--button {
+    transition: border-radius 128ms var(--ease);
+    color: var(--contrastLight);
+}
+
+/* icon plus */
+.switcheroo__squircle--button i {font-size: 19px;}
+
+.switcheroo__squircle--button:hover {color: var(--accentClr);}
+
+/* Bouton de suppression */
+.switcheroo__delete {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -7px;
+    right: -7px;
+    border-radius: 50%;
+    background-color: var(--accentClr);
+    transform: scale(0);
+    opacity: 1;
+    transition: transform 128ms var(--ease), opacity 64ms var(--ease);
+    cursor: pointer;
+    color: var(--neutral);
+    line-height: 0;
+}
+
+.switcheroo__squircle:hover .switcheroo__delete {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* TOOLTIP - INFOBULLE DU PSEUDO ---*/
+
+/* Conteneur du pseudo */
+.switcheroo__popper {
+    background-color: var(--neutralDarker);
+    padding: 0.30rem 1rem;
+    position: absolute;
+    width: -webkit-max-content;
+    width: max-content;
+    border-radius: 5px;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
+    pointer-events: none;
+    color: var(--textColor);
+    left: 155%;
+    top: 50%;
+    transform-origin: left;
+    transform: translateY(-50%) scale(0.98);
+}
+
+/* Flèche tooltip */
+.switcheroo__popper:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--neutralDarker);
+    z-index: -1;
+    left: -3px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-radius: 2px;
+}
+
+.switcheroo__squircle:hover .switcheroo__popper {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
+
+
+/* LOGO --- retirez display:none pour retrouver le logo */
+.switcheroo__logo,
+.switcheroo__divider {display: none}
+
+
+/* MODAL : FENETRE DE CONNEXION --- */
+
+/* Fond de l'affichage de connexion */
+.monomer-overlay {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s opacity ease;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Boîte de connexion */
+.monomer-modal {
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 94%;
+    padding: 30px;
+    transition: 0.2s opacity ease;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: var(--neutral);
+    padding: 50px;
+    box-shadow: var(--shadowBox);
+}
+
+
+/* Champs à remplir */
+.switcheroo__form-row {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Nom du champ */
+.switcheroo__form-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Zone de texte */
+.switcheroo__form-input {
+    padding: 6px!important;
+    border-radius: 4px;
+    width: 100%;
+    background-color: var(--neutral);
+    color: var(--contrastLight);
+    cursor: text;
+}
+
+/* Bouton de connexion */
+.switcheroo__form-button {
+    border-radius: 8px;
+    padding: 4px 10px 5px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    align-self: center;
+    background-color: var(--accentClr);
+    cursor: pointer;
+    color: var(--neutral);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.switcheroo__form-button:hover {
+    background: var(--contrastLight);
+}
+
+.monomer-modal.monomer-open,
+.monomer-overlay.monomer-open {
+    opacity: 1;
+}
+
+/* Fermer la boîte de connexion */
+.monomer-close {
+    font-size: 16px;
+    line-height: 12px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: var(--textColor);
+    border: 0;
+    outline: none;
+    background: var(--contrastLighter);
+    border-radius: 4px;
+    padding: 0;
+    padding-left: 1px;
+}
+
+.monomer-close:hover {
+    background: var(--contrastLight);
+}
+
+
+
+
+/*** ------------------------------- ***/
   
