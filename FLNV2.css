@@ -369,7 +369,7 @@ grid-template-columns: 300px auto;
     display: block;
 }
 
-.lateprofile > .latpost_profile .post_pseudo strong {
+.lateprofile > .latpost_profile .post_pseudo {
     font-family: 'Forum';
     font-weight: 400;
     font-size: 50px;
