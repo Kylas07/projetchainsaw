@@ -376,7 +376,6 @@ grid-template-columns: 300px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #FFFFFF;
     max-height: 90px;
     overflow: auto;
 }
