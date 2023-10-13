@@ -38,6 +38,32 @@ background-image: var(--imgzwen5);
     height: auto;
     overflow: auto;
 }
+
+.timothe {
+display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.timothe div {
+  background-image: url(https://64.media.tumblr.com/c6f580eb73f8a2e8e71f47621ec0ea3a/tumblr_pdx8deKYeX1s36b3fo7_400.gif);
+    height: 130px;
+    width: 100px;
+    min-height: 75px;
+    min-width: 100px;
+    background-size: cover;
+}
+.sliderz_fd c {
+  background:var(--colo600);
+  padding:0px 5px;
+  
+}
+.timothe div:nth-of-type(2) {
+  background-image: url(https://64.media.tumblr.com/b25804516e23b2aaa056e9ada44aac11/tumblr_pdx8deKYeX1s36b3fo6_400.gif);}
+
+separtator {
+  border-bottom:1px solid black;
+}
 .contfd > span:nth-of-type(3):after {  background:var(--colo600);text-transform: uppercase;font-weight: bold;padding: 2px 10px;content:"Mégalomane";}
 .contfd > span:nth-of-type(4):after {  background:var(--colo600);text-transform: uppercase;font-weight: bold;padding: 2px 10px;content:"égocentrique";}
 .contfd > span:nth-of-type(5):after {  background:var(--colo600);text-transform: uppercase;font-weight: bold;padding: 2px 10px;content:"vertueux";}
