@@ -261,7 +261,7 @@ input#tab-hiro1 , input#tab-hiro2 {
     margin-top: -260px;
     text-align: right;
     padding-right: 30px;
-    font-size: PlayFair Display;
+    font-family: PlayFair Display;
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -272,7 +272,7 @@ input#tab-hiro1 , input#tab-hiro2 {
     opacity: 0;
     color: white;
     padding-left: 20px;
-    font-size: PlayFair Display;
+    font-family: PlayFair Display;
     text-transform: uppercase;
     font-weight: bolder;
 
