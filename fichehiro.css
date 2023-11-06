@@ -74,6 +74,8 @@ z-index: 2;
     width: 405px;
     height: 200px;
     background: white;
+    outline: 1px solid white;
+    outline-offset: 5px;
     padding:20px;
     position: absolute;
     text-align: justify;
