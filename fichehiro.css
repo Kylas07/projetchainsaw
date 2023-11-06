@@ -206,6 +206,8 @@ input#tab-hiro1 , input#tab-hiro2 {
     transition: margin-top ease 1s;
     overflow: auto;
     display: flex;
+    outline: 0px solid white;
+    outline-offset: 0px;
     flex-direction: row-reverse;
     gap: 30px;
 }
