@@ -233,7 +233,7 @@ input#tab-hiro1 , input#tab-hiro2 {
     width: 268px;
     height: 7px;
     padding: 1px;
-    border: 1px solid var(--hiroco);
+    border: 1px solid var(--hirocolo);
     margin-top: 5px;
     margin-bottom: 10px;
     transition: ease 1s;
@@ -241,7 +241,7 @@ input#tab-hiro1 , input#tab-hiro2 {
 
 .statshiro stats {
     display: block;
-    background: var(--hiroco);
+    background: var(--hirocolo);
     height: 7px;
     float: left;
 }
