@@ -128,11 +128,11 @@ z-index: 2;
 }
 
 .aprphiro span {
-    color: #D88B52; 
+    color: var(--colohiro); 
     font-weight: bold;  
 }
 .chronohiro > div span {
-color: #D88B52;
+color: var(--colohiro);
 text-align: justify;
 font-family: 'Playfair Display', serif;
 font-size: 40px;
@@ -159,7 +159,7 @@ input#tab-hiro1 , input#tab-hiro2 {
     transition: margin-top 1s ease 0s;
     text-transform: uppercase;
     font-weight: bolder;
-    background: #D88B52;
+    background: var(--colohiro);
     padding: 3px;
     margin-left: 10px;
     color: #1E1E1E;
@@ -194,7 +194,7 @@ input#tab-hiro1 , input#tab-hiro2 {
     transform: scale(2.5);
 }
 #tab-hiro2:checked ~ svg path {
-    fill: #D88B52!important;
+    fill: var(--colohiro)!important;
     transition: ease 1s;
 }
 
