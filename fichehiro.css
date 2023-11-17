@@ -154,7 +154,7 @@ input#tab-hiro1 , input#tab-hiro2 {
 .infohiro label {
     position: absolute;
     margin-top: -60px;
-    z-index: 100;
+    z-index: 100!important;
     cursor: pointer;
     transition: margin-top 1s ease 0s;
     text-transform: uppercase;
@@ -174,7 +174,7 @@ input#tab-hiro1 , input#tab-hiro2 {
     opacity: 0!important;
     z-index: 1;}
 
-#tab-hiro1:not(:checked)~ label[for=tab-hiro1] {
+#tab-hiro1[type=radio]:not(:checked)~ label[for=tab-hiro1] {
     opacity: 1!important;
     z-index: 10;
         }
@@ -212,12 +212,12 @@ input#tab-hiro1 , input#tab-hiro2 {
     gap: 30px;
 }
 
-#tab-hiro2:checked ~ label {
+#tab-hiro2[type=radio]:checked ~ label {
     margin-top: -270px;
     transition: margin-top ease 1s;
 }
 
-#tab-hiro1:not(:checked)~ label {
+#tab-hiro1[type=radio]:not(:checked)~ label {
     margin-top: -270px;
     transition: margin-top ease 1s;
 }
