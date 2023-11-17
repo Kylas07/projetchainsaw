@@ -176,7 +176,7 @@ input#tab-hiro1 , input#tab-hiro2 {
 
 #tab-hiro1[type=radio]:not(:checked)~ label[for=tab-hiro1] {
     opacity: 1!important;
-    z-index: 10!important;
+    z-index: 10;
         }
 
 #tab-hiro2[type=radio]:checked ~ .renderhiro {
