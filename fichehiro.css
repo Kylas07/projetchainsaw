@@ -154,7 +154,7 @@ input#tab-hiro1 , input#tab-hiro2 {
 .infohiro label {
     position: absolute;
     margin-top: -60px;
-    z-index: 100!important;
+    z-index: 100;
     cursor: pointer;
     transition: margin-top 1s ease 0s;
     text-transform: uppercase;
@@ -166,11 +166,11 @@ input#tab-hiro1 , input#tab-hiro2 {
 }
 
 
-#tab-hiro1 + label {
+#tab-hiro1[type=radio] + label {
     opacity: 0;
     z-index: 1;
     }
-#tab-hiro2:checked + label {
+#tab-hiro2[type=radio]:checked + label {
     opacity: 0!important;
     z-index: 1;}
 
@@ -179,7 +179,7 @@ input#tab-hiro1 , input#tab-hiro2 {
     z-index: 10;
         }
 
-#tab-hiro2:checked ~ .renderhiro {
+#tab-hiro2[type=radio]:checked ~ .renderhiro {
     margin-left: -600px;
     opacity:0;
     transform: rotate3d(0, 1, 0, 180deg);
@@ -189,16 +189,16 @@ input#tab-hiro1 , input#tab-hiro2 {
 .infohiro svg path, .infohiro svg  {
     transition: ease 1s;
 }
-#tab-hiro2:checked ~ svg {
+#tab-hiro2[type=radio]:checked ~ svg {
     transition: ease 1s;
     transform: scale(2.5);
 }
-#tab-hiro2:checked ~ svg path {
+#tab-hiro2[type=radio]:checked ~ svg path {
     fill: var(--colohiro)!important;
     transition: ease 1s;
 }
 
-#tab-hiro2:checked ~ .anecdoteshiro {
+#tab-hiro2[type=radio]:checked ~ .anecdoteshiro {
     width: auto;
     height: 300px;
     margin-top: -240px;
