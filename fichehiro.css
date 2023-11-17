@@ -247,7 +247,7 @@ input#tab-hiro1 , input#tab-hiro2 {
 }
 
 #tab-hiro2:checked ~ .anecdoteshiro .statshiro {
-    --hiroco:white;
+    --hiroco:white!important;
     width:auto;
     transition: ease 1s;
 }
