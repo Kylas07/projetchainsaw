@@ -159,7 +159,7 @@ input#tab-hiro1 , input#tab-hiro2 {
     transition: margin-top 1s ease 0s;
     text-transform: uppercase;
     font-weight: bolder;
-    background: var(--colohiro);
+    background: var(--colohiro)!important;
     padding: 3px;
     margin-left: 10px;
     color: #1E1E1E;
