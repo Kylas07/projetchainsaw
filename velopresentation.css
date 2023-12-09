@@ -392,6 +392,9 @@ margin-top:150px;
 .hr_presentation .skills_prez li {
     text-align: unset;
     list-style-type: none;
+    gap: 20px;
+    display: flex;
+    place-items: center;
 }
 
 .hr_presentation .skills_prez li span { 
