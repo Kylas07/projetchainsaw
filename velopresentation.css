@@ -329,7 +329,7 @@ margin-top:150px;
 .boutons_presentation  #tab-hiro3[type=radio]:checked ~ .hover2_presentation {
     background:var(--maincolo);
     height: 360px;
-    margin-top: -1258px;
+    margin-top: -1220px;
     -webkit-transition-delay: .5s;
          -o-transition-delay: .5s;
             transition-delay: .5s;
