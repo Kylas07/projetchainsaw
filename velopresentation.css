@@ -144,12 +144,21 @@ overflow: hidden;
     text-align: unset;
 }
 
-.hr_presentation li span {
+/********** .hr_presentation li span {
 color: var(--maincolo);
 font-family: montserrat;
 font-size: 16px;
 font-weight: 700;
 text-transform: uppercase;
+} ************/
+
+.hr_presentation li span {
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style: none;
+    margin-right: 9px;
 }
 
 .hr_presentation .bottom_presentation {
@@ -399,4 +408,11 @@ margin-top:150px;
 
 .hr_presentation .hr_presentation .skills_prez li span { 
 color: var(--awards_color);
+}
+
+.hover2_presentation > .skills_prez {
+        display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin-left: 4em;
 }
