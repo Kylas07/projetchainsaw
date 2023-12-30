@@ -1,0 +1,132 @@
+:root {
+  --lux: #dd4e86;
+  --cons: #351c75;
+}
+
+#scenarios {
+  background: linear-gradient(18deg, var(--couleurannexe) 20%, rgba(0,0,0,1) 100%);
+  width: 580px;
+  padding: 10px;
+}
+
+#scenarios titre1 {
+  background: #151515;
+  width: 500px;
+  padding: 10px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 90%;
+  display: block;
+  text-align: right;
+  margin-right: -80px;
+  border-radius: 10px 0 0 10px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+#scenarios titre1 sub {
+  display: block;
+  text-transform: none;
+}
+
+#scenarios .purg {
+  width: 230px;
+  position: relative;
+}
+
+#scenarios .sc-text {
+  width: 560px;
+  background: #151515;
+  padding: 10px;
+  color: #fff;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#scenarios .sc-tt {
+  background: #151515;
+  width: 560px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 70%;
+  text-align: left;
+}
+
+#scenarios .sc-tt x {
+  font-size: 14px;
+}
+
+#scenarios .sc-infos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#scenarios .sc-inf {
+  background: #151515;
+  width: 260px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+#scenarios .sc-inf scroll {
+  display: block;
+  width: 255px;
+  height: 150px;
+  padding-right: 5px;
+  overflow: auto;
+}
+#scenarios .sc-inf c {
+  font-weight: bold;
+}
+
+#scenarios .tags {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#scenarios .tags tag {
+  color: #fff;
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 700;
+  background: #f94743;
+  margin: 20px 0 0 -10px;
+  padding: 3px 30px 5px 10px;
+  border-radius: 0 10px 10px 0;
+}
+
+#scenarios .icons {
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#scenarios .icons img {
+  width: 186px;
+  height: 106px;
+  border-radius: 10px;
+  object-fit: cover;
+}
