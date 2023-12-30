@@ -4,7 +4,7 @@
 }
 
 #scenarios {
-  background: linear-gradient(18deg, var(--couleurannexe) 20%, rgba(0,0,0,1) 100%);
+  background: #1e1e1e;
   width: 580px;
   padding: 10px;
 }
