@@ -130,3 +130,289 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
+#annonce {
+  background: #1e1e1e;
+  width: 600px;
+  padding: 10px;
+}
+
+#annonce .header {
+  background-position: center center;
+  width: 600px;
+  height: 150px;
+  background-size: cover;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#annonce .header titre {
+  background: #151515;
+  color: #f94743;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 30px 0 10px;
+  border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+}
+
+#annonce .post {
+  background: #151515;
+  margin-top: 20px;
+  width: 580px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#annonce .tags {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#annonce .tags tag {
+  color: #151515;
+  text-align: right;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  background: #f94743;
+  margin: 10px -10px 0 0;
+  padding: 0 10px 5px 30px;
+  border-radius: 10px 0 0 10px;
+}
+
+#annonce .post .liens {
+  text-decoration: none;
+  color: #f94743;
+  font: bold 14px inter;
+}
+
+:root {
+  --rougefonce: #bb372b;
+}
+
+#gazette {
+  background: #1e1e1e;
+  width: 700px;
+  min-height: 50px;
+  padding: 15px;
+}
+
+#gazette .g-lines {
+  display: inline-flex;
+  width: 700px;
+}
+
+#gazette .g-lines bloc {
+  width: 200px;
+  background: #151515;
+  padding: 10px;
+}
+#gazette bloc img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#gazette bloc .block {
+  background: #1e1e1e;
+  width: 180px;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#gazette .block l {
+  width: 180px;
+  height: 1px;
+  background: #fff;
+  display: block;
+  margin: 10px 0;
+}
+
+#gazette .block foll {
+  display: block;
+}
+
+#gazette .g-lines tri {
+  display: block;
+  border-bottom: 360px solid #151515;
+  border-right: 150px solid transparent;
+  position: relative;
+  margin-left: -1px;
+}
+#gazette .g-lines .bg {
+  background: url("https://static.zerochan.net/Yoshida.Hirofumi.full.3974898.jpg");
+  width: 500px;
+  margin-left: -149px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0 10px 10px 0;
+}
+
+#gazette .bg tag {
+  display: block;
+  color: #bb372b;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  background: #1e1e1e;
+  width: 340px;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 90%;
+  margin: 150px 0 0 -100px;
+  position: relative;
+}
+#gazette .bg sub {
+  display: block;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#gazette .preview {
+  margin-top: 20px;
+  min-height: 300px;
+  columns: 3;
+  column-gap: 10px;
+  width: 700px;
+}
+
+#gazette .preview coll {
+  display: block;
+  background: #151515;
+  width: 206px;
+  min-height: 50px;
+  break-inside: avoid-column;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+}
+#gazette .preview coll img {
+  width: 206px;
+  height: 206px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+#gazette .preview txt {
+  color: #fff;
+  display: block;
+}
+#gazette .preview a {
+  text-decoration: none;
+  color: #bb372b;
+}
+
+#gazette .post {
+  background: #151515;
+  width: 380px;
+  padding: 10px;
+  color: #fff;
+  text-align: justify;
+  font-family: inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+}
+
+#gazette .dis {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  align-items: center;
+}
+#gazette .dis img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+#gazette .dis text {
+  color: #bb372b;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  text-align: left;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+#gazette .dis text sub {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block;
+  text-transform: none;
+}
+
+#gazette .post id {
+  color: #d9d9d9;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#gazette .post l {
+  display: block;
+  background: #fff;
+  width: 380px;
+  height: 1px;
+  margin: 10px 0;
+}
+#gazette .post tags {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+#gazette .post tag {
+  display: block;
+  color: #fff;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
