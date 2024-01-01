@@ -381,7 +381,7 @@ margin-top:150px;
     grid-column: 1/3;
     overflow: auto;
 }
-
+.slider_presentation.slider_presentation1 {    margin-left: 20px;}
         .hr_presentation .slider_presentation {
             display: none;
           height:240px;
