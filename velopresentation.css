@@ -688,7 +688,7 @@ display:flex;}
     text-transform: lowercase;
     font-size: 10px!important;
 }
-#blog_comments .comment > div .fa_like_div button, .hover_like_discord > div {
+#blog_comments .comment > div .fa_like_div.like_containerz button {
     opacity: 0;
     transform: scaleX(0%);
     transform-origin: left center;
