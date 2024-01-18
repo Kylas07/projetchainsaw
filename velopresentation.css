@@ -786,6 +786,11 @@ display: grid;
     gap: 10px;
   color:white;
 }
+
+.cont_event_pnj.pnj_two rune {
+    float: left;
+}
+
 #pnj-fiche .runes_pnj > div {
   border-radius: 10px;
     padding:10px;
