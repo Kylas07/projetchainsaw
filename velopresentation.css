@@ -874,11 +874,14 @@ font-family: bebas neue;
     border-radius: 10px;
 }
 .masquerade img {
-    max-width: 600px;
-    max-height: 299px;
+    width: 32vw;
+    min-width: 600px;
+    max-width: 757px;
+    height: 231px;
+    object-fit: cover;
     border-radius: 10px;
     margin-top: -111px;
-    margin-left: 429px;
+    margin-left: 430px;
     z-index: 9999;
     position: absolute;
 }
