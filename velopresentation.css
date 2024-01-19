@@ -844,3 +844,41 @@ font-weight: 900;
 line-height: normal;
 text-transform: uppercase;
 }
+
+
+.masquerade {
+    position: absolute;
+    margin-top: -300px;
+    z-index: 1000;
+}
+.masquerade div {
+font-family: bebas neue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 58px;
+    -webkit-filter: brightness(1.6);
+            filter: brightness(1.6);
+    color: var(--bc)!important;
+    margin-top: -33px;
+    margin-left: -108px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 67px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -o-linear-gradient(70deg, var(--noirclair) 0%, var(--gris) 100%);
+    background: linear-gradient(20deg, var(--noirclair) 0%, var(--gris) 100%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.masquerade img {
+    max-width: 600px;
+    max-height: 299px;
+    border-radius: 10px;
+    margin-top: -111px;
+    margin-left: 429px;
+    z-index: 9999;
+    position: absolute;
+}
