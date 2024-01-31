@@ -755,7 +755,7 @@ background: rgba(27 27 27 / 80%);
 border: 1px solid #1E1E1E;
 background: #151515;}
 
-.infos_pnj_one > div:nth-of-type(2) {line-height: 1;}
+.infos_pnj_two > div:nth-of-type(2) {line-height: 1;}
 
 #pnj-fiche namepnj {
   color:var(--couleurannexe);
