@@ -236,6 +236,8 @@ span.statsaster stats {
 	margin: 10px 0;
 }
 
+.snapping_aster.section3 p {font-size:14px!important;}
+
 .snapping_aster.section3>span {
 	background: rgba(134,19,244,.8);
 	padding: 1px 2px;
