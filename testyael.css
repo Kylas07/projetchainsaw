@@ -1,0 +1,358 @@
+#yael {
+  background-attachment: fixed;
+  background-image: url("https://i.imgur.com/ZecSr1n.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 500px;
+  overflow: hidden;
+}
+
+#yael .sep {
+  background: url("https://i.imgur.com/WfJ2RUA.png");
+  width: 500px;
+  height: 98px;
+  background-size: cover;
+}
+
+#yael .bann {
+  width: 500px;
+  height: 369px;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/UrHPBHP.png");
+  display: flex;
+  align-items: center;
+}
+
+#yael .titre {
+  color: #fafafa;
+  text-align: right;
+  font-family: Kalnia;
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 80%;
+  text-transform: uppercase;
+  width: 280px;
+}
+
+#yael .backg {
+  background: #000;
+  width: 500px;
+  padding-top: 50px;
+}
+
+#yael .intro {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding: 25px;
+}
+
+#yael .id {
+  width: 65%;
+  margin-right: 10%;
+}
+
+#yael .id .info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  color: #fafafa;
+  font-family: playfair display;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+}
+#yael .info x {
+  font-family: kalnia;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  background-image: linear-gradient(
+    90deg,
+    #da9ed3 0%,
+    #fdbed6 50.98%,
+    #a5c0ed 99.97%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+#yael .facts {
+  width: 70%;
+}
+
+#yael .facts t {
+  display: block;
+  color: #fafafa;
+  font-family: kalnia;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  text-align: left;
+}
+
+#yael .facts .bloc {
+  margin-top: 10px;
+  height: 93px;
+  overflow: auto;
+  color: #fafafa;
+  text-align: justify;
+  font-family: playfair display;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  scrollbar-width: none;
+}
+
+#yael .barrestat {
+  width: 80%;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    #da9ed3 0%,
+    #fdbed6 50.98%,
+    #a5c0ed 99.97%
+  );
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -120px;
+}
+
+#yael .barrestat stat {
+  display: block;
+  height: 10px;
+  background: #fff;
+  width: 20%;
+}
+
+#yael .backg .stitre {
+  display: flex;
+  width: 80%;
+  padding-top: 10px;
+  color: #fff;
+  text-align: right;
+  font-family: kalnia;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+#yael .backg .stats {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#yael .ouais {
+  width: 32%;
+  height: 5px;
+  background: #fafafa;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#yael .ouais .ok {
+  background: linear-gradient(
+    -90deg,
+    #da9ed3 0%,
+    #fdbed6 50.98%,
+    #a5c0ed 99.97%
+  );
+  height: 5px;
+}
+#yael .stats xc {
+  color: #fafafa;
+  font-family: kalnia;
+  font-size: 12px;
+}
+
+#yael .caractere {
+  width: 70%;
+  padding: 50px 0;
+  font: 11px playfair display;
+  text-align: justify;
+  color: #fafafa;
+  line-height: 100%;
+}
+
+#yael .sep {
+  background: url("https://i.imgur.com/WfJ2RUA.png");
+  width: 500px;
+  height: 98px;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+#yael .questions {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+#yael .questions chif {
+  display: block;
+  color: #fafafa;
+  text-align: justify;
+  font-family: kalnia;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#yael .questions tir {
+  display: block;
+  color: #fafafa;
+  text-align: justify;
+  font-family: kalnia;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -15px;
+}
+#yael .questions .text {
+  width: 85%;
+  text-align: justify;
+  line-height: 90%;
+}
+#yael .text qst {
+  color: #fafafa;
+  font-family: "EB Garamond";
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#yael .text rep {
+  display: block;
+  font: 11px playfair display;
+  text-align: justify;
+  color: #fafafa;
+  margin-top: 10px;
+}
+
+#yael .chrono {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  column-width: 150px;
+  width: 375px;
+  font: 11px playfair display;
+  text-align: justify;
+  color: #fafafa;
+  height: 350px;
+  scrollbar-width: thin;
+}
+
+#yael .chrono t {
+  display: block;
+  color: #fafafa;
+  font-family: kalnia;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  text-align: left;
+}
+
+#yael .backg .titre2jcrois {
+  width: 80%;
+  font: 28px kalnia;
+  color: #fafafa;
+  text-align: right;
+  line-height: 90%;
+  margin-bottom: 25px;
+}
+
+#yael .credits {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+#yael .credits cred {
+  font: 11px playfair display;
+  padding: 10px;
+  color: #fafafa;
+  border: 1px solid #fff;
+  border-right: 0;
+  border-bottom: 0;
+  text-align: right;
+}
+
+#yael .op_tabs {
+  position: relative;
+  height: 180px;
+  width: 230px;
+  clear: both;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#yael .op_tab {
+}
+#yael .op_tab label {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    #da9ed3 0%,
+    #fdbed6 50.98%,
+    #a5c0ed 99.97%
+  );
+  color: #fafafa;
+  font-family: kalnia;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  padding: 5px;
+  font-weight: bold;
+  top: -10px;
+  right: -85px;
+}
+
+#yael .op_tab [type="checkbox"] {
+  display: none;
+}
+#yael .op_content {
+  position: absolute;
+  background: #000;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity 1s ease;
+  width: 187px;
+  height: 145px;
+  top: -170px;
+  right: -85px;
+  overflow: auto;
+  color: #fafafa;
+  text-align: justify;
+  font-family: playfair display;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  scrollbar-width: none;
+}
+
+#yael .op_tab [type="checkbox"]:checked ~ label {
+  background: linear-gradient(
+    -90deg,
+    #da9ed3 0%,
+    #fdbed6 50.98%,
+    #a5c0ed 99.97%
+  );
+}
+#yael .op_tab [type="checkbox"]:checked ~ label ~ .op_content {
+  transform: scale(1);
+  opacity: 1;
+}
