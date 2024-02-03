@@ -295,6 +295,7 @@ img.wizz {
 .chrono_aster p {
 	-webkit-margin-before: 0em;
 	margin-block-start: 0em;
+	margin: auto 0;
 }
 
 .chrono_aster>div span {
