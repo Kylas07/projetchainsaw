@@ -1,0 +1,315 @@
+:root .cont_aster {
+	--main_aster: #9747FF;
+}
+
+.cont_aster ::-webkit-scrollbar {
+	width: 13px;
+}
+
+.cont_aster ::-webkit-scrollbar-thumb {
+	background-color: #fff;
+	border-radius: 1px;
+	border: 6px solid var(--main_aster);
+}
+
+.cont_aster ::-webkit-scrollbar-track {
+	background: var(--main_aster);
+}
+
+.cont_aster {
+	padding-top: 50px;
+	color: #fff;
+	background: #080709;
+	width: 700px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.cont_aster b,.cont_aster i {
+	color: var(--main_aster);
+}
+
+.titre_aster {
+	height: 110px;
+	text-transform: uppercase;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+	place-content: center;
+	font-family: "Playfair Display SC",serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 24px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.titre_aster div>span {
+	color: var(--main_aster);
+}
+
+.cont_aster uu {
+	display: inline-block;
+	line-height: 0em;
+	padding-bottom: .5em;
+	background: rgba(134,19,244,.8);
+}
+
+.titre_aster ss {
+	-webkit-text-decoration-line: line-through;
+	text-decoration-line: line-through;
+	-webkit-text-decoration-color: var(--main_aster);
+	text-decoration-color: var(--main_aster);
+	text-decoration-thickness: 3px;
+}
+
+.infos_aster {
+	height: 500px;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 50px 1fr;
+	grid-template-columns: 1fr 1fr;
+	-ms-grid-rows: 1fr 50px 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 50px;
+	gap: 50px;
+	font-size: 14px;
+	font-family: "Cormorant Infant",serif;
+	text-transform: uppercase;
+}
+
+.infos_aster>*:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+
+.infos_aster>*:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+
+.infos_aster>*:nth-child(3) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}
+
+.infos_aster>*:nth-child(4) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
+}
+
+.sque_aster {
+	background-image: url(https://i.imgur.com/Pql4TVP.png);
+	height: 500px;
+	width: 500px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-ms-grid-column-align: center;
+	justify-self: center;
+	background-position: center;
+	position: absolute;
+}
+
+.haha {
+	background-image: url(https://i.imgur.com/4qwpuLF.png);
+}
+
+.zero_responsive {
+	-ms-grid-row: 1;
+	grid-row: 1;
+	-ms-grid-column: 1;
+	grid-column: 1;
+	border: 1px solid rgba(255,255,255,.1);
+	background: #000;
+	z-index: 1;
+	padding: 20px;
+}
+
+.zero_responsive li {
+	list-style-type: none;
+	line-height: 2;
+}
+
+.zero_responsive:nth-of-type(1) span {
+	background: rgba(134,19,244,.8);
+	padding: 1px 2px;
+}
+
+.zero_responsive.duo {
+	-ms-grid-row: 2;
+	grid-row: 2;
+	-ms-grid-column: 2;
+	grid-column: 2;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+span.statsaster {
+	display: block;
+	height: 7px;
+	padding: 1px;
+	border: 1px solid var(--main_aster);
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+span.statsaster stats {
+	display: block;
+	background: var(--main_aster);
+	height: 7px;
+	float: left;
+}
+
+.zero_responsive.duo div div {
+	display: -ms-grid;
+	display: grid;
+	gap: 20px;
+	-ms-grid-columns: 1fr 20px 1fr;
+	grid-template-columns: 1fr 1fr;
+	font-style: italic;
+}
+
+.onglets_aster {
+	height: 700px;
+	display: -ms-grid;
+	display: grid;
+}
+
+.onglets_aster>div {
+	-ms-grid-row: 1;
+	grid-row: 1;
+	-ms-grid-column: 1;
+	grid-column: 1;
+}
+
+.onglets_asterimg {
+	height: 700px;
+	background-image: url(https://i.imgur.com/smPbRb7.jpeg);
+	background-size: cover;
+	mix-blend-mode: hard-light;
+	-webkit-filter: contrast(4) grayscale(1);
+	filter: contrast(4) grayscale(1);
+	opacity: .3;
+}
+
+.control_snap {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	scroll-snap-stop: always;
+	-ms-scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
+}
+
+.snapping_aster {
+	height: 700px;
+	text-align: center;
+	scroll-snap-align: center;
+	-webkit-box-flex: 0;
+	-ms-flex: none;
+	flex: none;
+	text-align: justify;
+	margin: 10px 0;
+}
+
+.snapping_aster.section3>span {
+	background: rgba(134,19,244,.8);
+	padding: 1px 2px;
+}
+
+.haha_responsivenon {
+	display: -ms-grid;
+	display: grid;
+}
+
+.haha_responsivenon>div {
+	-ms-grid-row: 1;
+	grid-row: 1;
+	-ms-grid-column: 1;
+	grid-column: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
+	justify-content: space-evenly;
+}
+
+.haha_responsivenon img {
+	width: 200px;
+	height: 100px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	outline: 1px solid var(--main_aster);
+	outline-offset: 5px;
+}
+
+img.wizz {
+	background: -o-linear-gradient(45deg,black,var(--main_aster));
+	background: linear-gradient(45deg,black,var(--main_aster));
+	z-index: 1;
+	mix-blend-mode: hue;
+}
+
+.chrono_aster {
+	height: 700px;
+	background-image: url(https://i.imgur.com/UhInhqf.png);
+	background-size: cover;
+	padding: 50px;
+}
+
+.chrono_aster>div {
+	text-align: justify;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 20px;
+}
+
+.chrono_aster p {
+	-webkit-margin-before: 0em;
+	margin-block-start: 0em;
+}
+
+.chrono_aster>div span {
+	text-transform: uppercase;
+	background: var(--main_aster);
+	padding: 2px 13px;
+	font-size: 20px;
+	height: 23px;
+}
+
+.bonus_aster {
+	background: rgba(134,19,244,1);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 10px;
+	gap: 10px;
+	font-family: arial;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
