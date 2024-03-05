@@ -205,7 +205,7 @@ transition:ease .5s;}
 .ache_barre_stats {
     border-radius: 10px;
     background: #080709;
-    height: 10px;
+    height: 13px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
