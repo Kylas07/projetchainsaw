@@ -34,7 +34,7 @@ function infobulle(e) {
 
 // Ajoutez l'écouteur d'événement au document
 document.querySelectorAll('.tooltip').forEach((element) => {
-    element.addEventListener('mouseenter', onHoverToggleTooltip);
-    element.addEventListener('mouseleave', onHoverToggleTooltip);
-    element.addEventListener('mousemove', onHoverToggleTooltip);
+    element.addEventListener('mouseenter', infobulle);
+    element.addEventListener('mouseleave', infobulle);
+    element.addEventListener('mousemove', infobulle);
 });
