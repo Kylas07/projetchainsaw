@@ -2,10 +2,10 @@
     var methods = {
         init: function(options) {
             var defaults = {
-                tip_follows_cursor: false,
-                tip_delay_time: 700,
-                tip_fade_speed: 300,
-                attribute: "title"
+            tip_follows_cursor:true,
+            tip_delay_time:0,
+            tip_fade_speed:100,
+            attribute:"title"
             },
                 options = $.extend(defaults, options);
             if ($("#s-m-t-tooltip").length === 0) {
