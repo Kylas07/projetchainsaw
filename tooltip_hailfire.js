@@ -19,14 +19,8 @@
                 "width": "100%",
                 "height": "100%"
             });
-                $("[title]").each(function() {
-                    let couleur = $(this).css("--primary");
-                    if (couleur !== undefined && couleur !== null) {
-                        smtTooltip.css("--primary", couleur);
-                        return false;
-                    }
-                });   
-function smtGetCursorCoords(event) {
+
+            function smtGetCursorCoords(event) {
                 var smtCursorCoordsX = event.pageX,
                     smtCursorCoordsY = event.pageY;
                 smtTooltip.style_my_tooltips("position", {
