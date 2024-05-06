@@ -20,9 +20,9 @@
                 "height": "100%"
             });
                 $("[title]").each(function() {
-                    var couleur = $(this).css("--couleur");
+                    let couleur = $(this).css("--primary");
                     if (couleur !== undefined && couleur !== null) {
-                        smtTooltip.css("--couleur", couleur);
+                        smtTooltip.css("--primary", couleur);
                         return false;
                     }
                 });   
