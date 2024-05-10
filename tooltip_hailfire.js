@@ -5,7 +5,7 @@
             tip_follows_cursor:true,
             tip_delay_time:0,
             tip_fade_speed:100,
-            attribute:"title"
+            attribute:"data-tooltip"
             },
                 options = $.extend(defaults, options);
             if ($("#s-m-t-tooltip").length === 0) {
