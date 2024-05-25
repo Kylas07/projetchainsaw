@@ -86,10 +86,10 @@ grid-column: 1 / span 2;
 font-family: 'Inter';
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
+    color: var(--unifond);
 }
 .post_details a {
-  color: white;
+  color: var(--unifond);
   font-weight: 400;
 }
 .post_date {
@@ -112,12 +112,12 @@ flex-grow: 1;
     unicode-bidi: unset;
 }
 ul.profile-icons li:hover ion-icon, ul.profile-icons span:hover ion-icon {
-    background: white;
+    background: var(--unifond);
     color: var(--groupePost);
 }
 ul.profile-icons ion-icon {
   background: var(--groupePost);
-    color: white;
+    color: var(--unifond);
     padding: 5px;
     font-size: 30px;
     border-radius: 5px;
@@ -177,7 +177,7 @@ button.rep-button .rep-nb {
     place-self: start;
     position: sticky;
     top: 10px;
-    background: white;
+    background: var(--unifond);
     border-radius: 5px;
     padding: 10px;
     justify-self: center;
@@ -253,7 +253,8 @@ a.fa-mention {
 
 .post_message {
 	padding: 25px;
-    background: white;
+    background: var(--unifond);
+    color: var(--unidark);
     border-radius: 5px;
       box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
 }
@@ -284,7 +285,7 @@ a.fa-mention {
 text-transform: uppercase;
     text-align: left;
     font-weight: bold;
-    color: white;
+    color: var(--unifond);
 }
 .illu_post_row  {
 grid-column: 1 / 3;
@@ -348,17 +349,17 @@ grid-row: 1;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--groupePost);
-    background: white;
+    background: var(--unifond);;
     padding: 2px 6px;
     border-radius: 5px;
 }
 .profil_contact a:hover {
       background: var(--groupePost);
-      color: white;
+      color: var(--unifond);
 }
 .profile_icons:hover ion-icon{
     color: var(--groupePost);
-    background: white;
+    background: var(--unifond);
 }
 .conteneur_post_forum {
   display: grid;
@@ -372,14 +373,14 @@ grid-row: 1;
       background: var(--groupePost);
     padding: 2px 5px;
     font-family: 'Inter';
-    color: white;
+    color: var(--unifond);
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
     border-radius: 5px;
 }
 .user_field {
-  color:white;
+  color:var(--unifond);
  display: flex;
     flex-direction: column;
     width: max-content;
