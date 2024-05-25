@@ -275,18 +275,6 @@ a.fa-mention {
 	display: none;
 }
 
-body {
-    background-color:#1f1f1f;
-    font-family: var(--font);
-    font-size: var(--normal-size);
-    color: var(--texte);
-    margin: 0 !important;
-    animation: fadeBackgroundIn 1s;
-    transition: all .5s ease;
-    display: flex;
-    justify-content: center;
-}
-
 .post_rank {
     display: flex;
     align-items: center;
