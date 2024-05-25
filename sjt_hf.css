@@ -1,0 +1,424 @@
+
+/****** ------------------------------------------------------------------------------
+ ****** AFFICHAGE D'UN SUJET --------------------------------------------------------- ******/
+
+/* PARTICIPANTS DU SUJET ---*/
+
+/* Conteneur de la liste des participants au sujet */
+.poster-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+a {
+  text-decoration:none;
+}
+/* Avatar du participant*/
+.poster {
+	background: var(--poster-avatar);
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	margin-left: -8px;
+	border: 2px solid var(--neutralDark);
+	background-size: cover;
+	background-position: center;
+}
+
+/* Lien de renvoi vers son profil */
+.poster a {
+	display: block;
+	height: 100%;
+}
+
+/* Nombre de participants */
+.poster-count {
+	margin-left: 8px;
+}
+
+.poster-more-list {
+	display: none;
+}
+
+.poster-more {
+	display: grid;
+	place-items: center;
+	position: relative;
+}
+
+.poster-more:hover .poster-more-list {
+	display: block;
+	position: absolute;
+	top: 29px;
+	width:150px;
+	background: var(--neutralDarker);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/*** ------------------------------- ***/
+/*** SUJET ------------------------- ***/
+
+.post_row {
+	background: var(--neutral);
+	display: grid;
+	grid-template-rows: max-content auto;
+	grid-template-columns: min-content 1fr;
+}
+
+div.post_row:nth-of-type(2) {
+	border-radius: 5px 5px 0 0;
+}
+
+div.post_row:last-of-type {
+	border-radius: 0 0 5px 5px;
+	border-bottom: none;
+}
+
+.post_details {
+grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: var(--groupePost);
+font-family: 'Inter';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+.post_details a {
+  color: white;
+  font-weight: 400;
+}
+.post_date {
+	flex-grow: 100;
+}
+
+/* BOUTONS D'EDITION DU MESSAGE --- */
+/* Conteneur boutons d'édition */
+ul.profile-icons {
+  align-items:center;
+flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+    unicode-bidi: unset;
+}
+ul.profile-icons li:hover ion-icon, ul.profile-icons span:hover ion-icon {
+    background: white;
+    color: var(--groupePost);
+}
+ul.profile-icons ion-icon {
+  background: var(--groupePost);
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+/*UN SEUL bouton d'édition */
+.profile-icons span {
+	padding: 2px 4px;
+	border-radius: 5px;
+}
+/* Cache les boutons pour les invités */
+.profile-icons span:empty {
+	display: none;
+}
+
+/*hover d'un bouton d'édition*/
+
+/* BOUTON LIKE --- */
+/* Conteneur du bouton like */
+.like_button {
+	float: right;
+	margin-left: 10px;
+	flex-grow: 1;
+	cursor: pointer;
+}
+
+/* Bouton like */
+.rep-button,
+.rep-button:active,
+.rep-button:focus {
+	background: var(--neutralDark);
+	color: var(--textColor);
+	border: none;
+	padding: 3px 5px;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+/*Bouton au survol*/
+.rep-button:hover {
+	background: var(--var(--contrastLighter));
+}
+
+/* Texte "j'aime" */
+button.rep-button .like_text {
+}
+
+/*compteur de like*/
+button.rep-button .rep-nb {
+	margin-left: 5px;
+	padding: 0 3px;
+	background: var(--neutral);
+	border-radius: 3px;
+}
+
+.post_profile {
+    place-self: start;
+    position: sticky;
+    top: 10px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    justify-self: center;
+    box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
+}
+
+.post_pseudo {
+	font-size: 35px;
+}
+
+/* Lien "@" de mention */
+a.fa-mention {
+	cursor: pointer;
+}
+
+/* Mention "en ligne" */
+.online {
+	display: inline-block;
+	position: relative;
+	background-color: var(--neutralDarker);
+	border-radius: 5px;
+	padding: 0 5px;
+	margin: 0 auto;
+}
+
+/* RECOMPENSES --- */
+/* Conteneur des récompenses */
+#list_awards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+/* Récompense */
+.award {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	background-image: var(--award-image);
+	background-size: cover;
+	background-position: center;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.award:hover .award_tooltiptext {
+	display: block;
+}
+
+/* Bloc description de la récompenses */
+.award_tooltiptext {
+	width: max-content;
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25px;
+	background-color: var(--neutral);
+	border: 1px solid var(--neutralDark);
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 11px;
+}
+
+/* titre de la récompenses*/
+.award_tooltiptext_title {
+	font-weight: 600;
+}
+
+.online:empty {
+	display: none;
+}
+
+.post_message {
+	padding: 25px;
+    background: white;
+    border-radius: 5px;
+      box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
+}
+
+/* REPONSE RAPIDE --- */
+/*supression de la mention "réponse rapide" */
+.quickreply div.h3 {
+	display: none;
+}
+
+/*centrer la réponse rapide*/
+.quickreply {
+	display: flex;
+	justify-content: center;
+}
+
+/* Retire le cadre de la réponse rapide pour les invités */
+#quickreply_content:empty {
+	display: none;
+}
+
+body {
+    background-color:#1f1f1f;
+    font-family: var(--font);
+    font-size: var(--normal-size);
+    color: var(--texte);
+    margin: 0 !important;
+    animation: fadeBackgroundIn 1s;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.post_rank {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.info_rank {
+text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+}
+.illu_post_row  {
+grid-column: 1 / 3;
+grid-row: 1;
+    background-attachment: fixed;
+    background-image: var(--anx-img);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: 30;
+    filter: grayscale(1);
+    mix-blend-mode: multiply;
+}
+.illu_post_row_bg {
+  grid-column: 1 / 3;
+grid-row: 1;
+    z-index: 29;
+    filter: grayscale(1);
+    background: #141414;
+    mix-blend-mode: multiply;
+}
+
+.post_rank img {
+  aspect-ratio: 1;
+    height: 120px;
+}
+.texte_rank  {
+      line-height: 1;
+}
+
+.post_avatar {
+    width: 200px;
+    height: 320px;
+    overflow: hidden;
+    transition: ease 1s;
+}
+.post_userinfo {
+    margin-top: -325px;
+  opacity:0;
+    transition: ease 1s;;
+    height: 100%;
+    background:rgba(0 0 0 / 25%);
+    backdrop-filter: blur(10px);
+}
+.post_userinfo img {
+  width:100px;
+}
+.post_avatar:hover .post_userinfo {
+    opacity:1;
+  transition: 1s ease;
+} 
+.profil_contact {
+      grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    background: var(--groupePost);
+    padding: 15px 30px;
+      gap: 20px;
+}
+.profil_contact a {
+  font-family: 'Inter';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--groupePost);
+    background: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+.profil_contact a:hover {
+      background: var(--groupePost);
+      color: white;
+}
+.profile_icons:hover ion-icon{
+    color: var(--groupePost);
+    background: white;
+}
+.conteneur_post_forum {
+  display: grid;
+    grid-template-columns: 230px auto 50px;
+    grid-column: 1 / 3;
+  padding: 20px;
+  gap: 20px;
+    background: #ececec;
+}
+.field_label {
+      background: var(--groupePost);
+    padding: 2px 5px;
+    font-family: 'Inter';
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.user_field {
+  color:white;
+ display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.post_userinfo .field-date-dinscription, .post_userinfo .field-messages, .post_userinfo .field- .field_label,.post_userinfo .field-, .field_separator  {
+  display:none;
+}
+
+.avatar_profil_hihi > div:not(.field-) {
+  display:none;
+}
+.avatar_profil_hihi .field- {
+  display:flex!important;}
+.avatar_infos {
+  padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.avatar_profil_hihi .field- img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 100px 0px 100px 100px;
+}
