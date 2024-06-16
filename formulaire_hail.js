@@ -1,8 +1,11 @@
 const { createApp } = Vue;
 const { createVuetify } = Vuetify;
 
-const vuetify = createVuetify();
-
+const vuetify = createVuetify({
+  theme: {
+    defaultTheme: 'dark',
+  },
+})
 createApp({
   data() {
     const classes = [
