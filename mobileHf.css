@@ -1,3 +1,4 @@
+  
 
 #header.mobile_title {
     background-image: none;
@@ -11,6 +12,9 @@
     background: var(--blackop);
     border-bottom: 3px solid var(--accent2);
     backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 #mpage-body-modern .forum-header {
     display:none;
@@ -29,16 +33,6 @@ h1.mobile_title_content {
     margin-block-end: 00;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-family: Chomsky;
-    font-size: 60px;
-    font-style: normal;
-    text-transform: capitalize;
-    font-weight: 400;
-    margin-left: -50px;
-    background: linear-gradient(0deg, var(--accent2) 23.67%, var(--accent) 60%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 /*********** FICHE PREZ **********************/
 .fiche_all * ::-webkit-scrollbar{width:4px; background: transparent; border-radius:5px;}  
@@ -66,14 +60,14 @@ body{background:var(--unifond);}
 #spectre,#artificier{--classeimg:url('https://i.imgur.com/O266tcB.png');}
 
 .fiche_all{
-  width:var(--fiche-width);
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  font-family:var(--font);
-  background:#ececec;
-  border-radius:5px; 
-  overflow:hidden;  
+  width: auto!important;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+  background: #ececec;
+  border-radius: 5px;
+  overflow: hidden; 
 }
 
 .fiche_head{
@@ -122,24 +116,18 @@ body{background:var(--unifond);}
 
 .fiche_bloc1{
   padding:25px;
-  display:grid;
-  grid-template-columns: auto 650px;
-    justify-content: start;
-    gap: 25px;
-  width:var(--fiche-width);
 }
 
 .fiche_ava{
-  width:250px;
-  height:350px;
-  border-radius:5px;
-  box-shadow:0px 0px 1px grey;
-  display:flex;
-  position:relative;
-  margin-top:-50px;
-  border-radius:5px;
-  background:white;
-  padding:20px;
+    aspect-ratio: 2 / 3;
+    width: 190px;
+    box-shadow: 0px 0px 1px grey;
+    display: flex;
+    position: relative;
+    margin: 50px 0;
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
 }
 
 .fiche_ava div{
@@ -150,8 +138,6 @@ body{background:var(--unifond);}
 }
 
 .fiche_champs{
-  display:flex;
-  flex-wrap:wrap;
   gap:20px;
 }
 
@@ -864,9 +850,7 @@ img.forum-img {
   }
 
   /******************** FICHE EVA *****************/
-  .fiche_all {
-    --fiche-width: auto;
-}
+
   .fiche_ava {
     place-self: center;
   }
@@ -874,9 +858,6 @@ img.forum-img {
     grid-template-columns: auto;
   }
 
-  .fiche_champs {
-    display: grid;
-}
 .fiche_champ:last-child {
     width:unset;
 }
@@ -960,7 +941,3 @@ img.forum-img {
 .navmenu_block li {
     list-style: none;
 }
-
-
-
-
