@@ -440,13 +440,13 @@ color:white;
 }
 
 .fiche_playerimg{
-  width:300px;
-  height:120px;
-  background:white;
-  border-radius:5px;
-  box-shadow:0px 0px 3px lightgrey;
-  padding:10px;
-  display:flex;
+    aspect-ratio: 4 / 2;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px lightgrey;
+    padding: 10px;
+    display: flex;
 }
 
 .fiche_playerimg div{
@@ -941,3 +941,7 @@ img.forum-img {
 .navmenu_block li {
     list-style: none;
 }
+
+
+
+
