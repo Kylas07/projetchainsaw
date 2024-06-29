@@ -65,7 +65,7 @@ createApp({
       race,
       classes,
       requiredRule: [v => !!v || 'Ce champ est requis'],
-      classeLimit: 2,
+      classeLimit: 3,
       traitLimit: 7,
       chronoLimit: 20,
       displayCode: false,
