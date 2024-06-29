@@ -330,4 +330,4 @@ span.feat {
   background: var(--unilight);
 }
 .bottin-reserved {display: flex;flex-direction: column;align-items: center;gap: 10px;width: 800px;margin: auto;height: 44px;position: relative;}
-.member_info {position: absolute;left: 0px;grid-template-columns: 300px 300px auto;top: 0px;}
+.bottin-reserved .member_info {position: absolute;left: 0px;grid-template-columns: 300px 300px auto;top: 0px;}
