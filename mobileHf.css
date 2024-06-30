@@ -980,6 +980,20 @@ img.forum-img {
 #mwrap .coderp_rp {
   padding: 40px 20px;
 }
+
+#mwrap .rpeva {
+  width:unset;
+  margin: 30px;
+
+}
+#mwrap .rpeva_titre {
+  font-size:3em;
+}
+#mwrap .rpeva_left {
+    width: 100px;
+    height: 100%;
+    margin-left: -30px;
+}
 #mwrap .rpeva_rp div {
     height: unset;
     overflow: unset;
