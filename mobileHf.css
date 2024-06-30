@@ -972,6 +972,20 @@ img.forum-img {
     list-style: none;
 }
 
+/************ MOBILE EVA ************/
 
-
-
+#mwrap .coderp {
+  margin: 0px;
+}
+#mwrap .coderp_rp {
+  padding: 40px 20px;
+}
+#mwrap .rpeva_rp div {
+    height: unset;
+    overflow: unset;
+    padding-right: 10px;
+    scrollbar-width: auto;
+}
+#mwrap .rpeva_titre {
+padding: 0px;
+}
