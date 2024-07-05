@@ -1,0 +1,50 @@
+@import url("https://fonts.cdnfonts.com/css/gloock-2");
+#hira {
+  --maincolo: #8393eb;
+}
+.pprp {
+  width: 500px;
+  background: url("https://i.imgur.com/WP47U02.png");
+  padding: 25px;
+  outline: 1px solid #ededed;
+  outline-offset: 5px;
+}
+
+.pprp .titrecont {
+  display: flex;
+  justify-content: flex-end;
+}
+.pprp .titre {
+  background: var(--maincolo);
+  padding: 15px;
+  text-align: right;
+  font: 25px gloock;
+  color: #fafbfc;
+  border-bottom: 1px solid #ededed;
+  border-radius: 10px 10px 0 0;
+  line-height: 90%;
+}
+
+.pprp .corpstxt {
+  background: #fafbfc;
+  width: 400px;
+  padding: 50px;
+  font: 12px inter;
+  text-align: justify;
+  padding-bottom: 75px;
+}
+.pprp .corpstxt b {
+  color: var(--maincolo);
+}
+.pprp b::before {
+  content: "— ";
+}
+
+.pprp .diamond {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 10px solid #fafbfc;
+  margin-top: -50px;
+}
