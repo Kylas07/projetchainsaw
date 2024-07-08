@@ -41,40 +41,49 @@
             initIsotope();
         }
 
-        function initIsotope() {
-            // Utiliser setTimeout pour s'assurer que Isotope est initialisé après le rendu des éléments
-            setTimeout(() => {
-                const $grid = $('#member-container').isotope({
-                    itemSelector: '.member_info',
-                    layoutMode: 'fitRows',
-                    getSortData: {
-                        nomPrenom: '.pseudo',
-                        mainClasse: '.mainClasse',
-                        rank: '.rank',
-                        featNom: '.feat',
-                        race: '.race'
-                    }
-                });
+function initIsotope() {
+    setTimeout(() => {
+        const $grid = $('#member-container').isotope({
+            itemSelector: '.member_info',
+            layoutMode: 'fitRows',
+            getSortData: {
+                nomPrenom: function(itemElem) {
+                    return $(itemElem).find('.pseudo').text().toLowerCase();
+                },
+                mainClasse: function(itemElem) {
+                    return $(itemElem).find('.mainClasse').text().toLowerCase();
+                },
+                rank: function(itemElem) {
+                    return $(itemElem).find('.rank').text().toLowerCase();
+                },
+                featNom: function(itemElem) {
+                    return $(itemElem).find('.feat').text().toLowerCase();
+                },
+                race: function(itemElem) {
+                    return $(itemElem).find('.race').text().toLowerCase();
+                }
+            }
+        });
 
-                document.querySelector('button[for="Alphabetique"]').addEventListener('click', () => {
-                    $grid.isotope({ sortBy: 'nomPrenom' });
-                });
+        document.querySelector('button[for="Alphabetique"]').addEventListener('click', () => {
+            $grid.isotope({ sortBy: 'nomPrenom' });
+        });
 
-                document.querySelector('button[for="mainClasse"]').addEventListener('click', () => {
-                    $grid.isotope({ sortBy: 'mainClasse' });
-                });
+        document.querySelector('button[for="mainClasse"]').addEventListener('click', () => {
+            $grid.isotope({ sortBy: 'mainClasse' });
+        });
 
-                document.querySelector('button[for="groupe"]').addEventListener('click', () => {
-                    $grid.isotope({ sortBy: 'rank' });
-                });
+        document.querySelector('button[for="groupe"]').addEventListener('click', () => {
+            $grid.isotope({ sortBy: 'rank' });
+        });
 
-                document.querySelector('button[for="feat"]').addEventListener('click', () => {
-                    $grid.isotope({ sortBy: 'featNom' });
-                });
+        document.querySelector('button[for="feat"]').addEventListener('click', () => {
+            $grid.isotope({ sortBy: 'featNom' });
+        });
 
-                document.querySelector('button[for="race"]').addEventListener('click', () => {
-                    $grid.isotope({ sortBy: 'race' });
-                });
-            }, 0);
-        }
+        document.querySelector('button[for="race"]').addEventListener('click', () => {
+            $grid.isotope({ sortBy: 'race' });
+        });
+    }, 0);
+}
         fetchData();
