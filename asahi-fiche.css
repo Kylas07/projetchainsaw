@@ -11,6 +11,27 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+.Asahi-fact span {    
+  padding: 0 6px;
+  background: #7581F2;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.Asahi-hi b {
+  color:#7581F2;
+  font-weight: bold;  
+}
+.Asahi-hi i {
+  color:#7581F2;
+}
+.Asahi-hi uua {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: .5em;
+  background: #c4caff;
+}
 .Asahi-top {
   display:flex;
   flex-direction:column;
