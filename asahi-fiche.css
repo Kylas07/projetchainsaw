@@ -10,13 +10,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
-@media (prefers-color-scheme: dark) {
-  .Asahi-hi {
-    --mix: difference;
-    --background:#1E1E1E;
-  }
-}
 .Asahi-fact span {    
   padding: 0 6px;
   background: #7581F2;
