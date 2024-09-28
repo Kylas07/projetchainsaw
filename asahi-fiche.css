@@ -32,6 +32,12 @@ body {
   padding-bottom: .5em;
   background: #c4caff;
 }
+.Asahi-char uua {
+    display: inline-block;
+    line-height: 0em;
+    padding-bottom: .5em;
+    background: #7581F2;
+}
 .Asahi-top {
   display:flex;
   flex-direction:column;
