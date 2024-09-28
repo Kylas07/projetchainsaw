@@ -73,6 +73,7 @@ body {
   gap: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .right-about li ol {
   list-style: none;
