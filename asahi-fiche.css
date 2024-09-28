@@ -90,6 +90,7 @@ body {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  width: max-content;
 }
 .Asahi-facts {
   display: flex;
