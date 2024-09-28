@@ -1,15 +1,21 @@
-body {
-  background-color:black;
-}
 .Asahi-hi {
+  --mix: unset;
+  --background:#D9D9D9;
   width: 600px;
-  background-color:#D9D9D9;
+  background-color:var(--background);
   color:#1E1E1E;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  .Asahi-hi {
+    --mix: difference;
+    --background:#1E1E1E;
+  }
 }
 .Asahi-fact span {    
   padding: 0 6px;
@@ -94,6 +100,7 @@ body {
   width: 75%;
   display: flex;
   justify-content: space-around;
+  mix-blend-mode: var(--mix);
 }
 .right-about li {
   list-style: none;
@@ -129,6 +136,7 @@ body {
   background-image:url('https://i.imgur.com/4oFElQ5.png');
   width:40%;
   background-size: cover;
+  mix-blend-mode: var(--mix);
 }
 .Asahi-quote {
   color: var(--hard-bg, #7581F2);
