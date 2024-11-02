@@ -431,22 +431,22 @@
     }
     
     .fiche_player{
-    width:var(--fiche-width);
-    background:var(--gradientg);
-    color:white;
-    font-family:var(--inter);
-    font-weight:bold;
-    padding:25px;
-    display:grid;
-    grid-template-columns:300px auto;
-    gap:25px;
+    width: var(--fiche-width);
+    background: black;
+    color: white;
+    font-family: var(--inter);
+    font-weight: bold;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 25px;
     align-items: center;
     }
     
     .fiche_playerimg{
     width:300px;
     height:120px;
-    background:white;
+    background: var(--gradientg);
     border-radius:5px;
     box-shadow:0px 0px 3px lightgrey;
     padding:10px;
