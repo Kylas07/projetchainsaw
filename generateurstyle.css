@@ -51,6 +51,7 @@
     #chevalier,#paladin,#berserker,#sabreur{--classeimg:url('https://i.imgur.com/WF67kwu.png');}
     #druide,#traqueur,#invocateur{--classeimg:url('https://i.imgur.com/blAVmhM.png');}
     #spectre,#artificier{--classeimg:url('https://i.imgur.com/O266tcB.png');}
+    #damné {--classimg:url('https://images2.imgbox.com/bc/d9/iw37EG82_o.png');}
     
     .fiche_all{
     width:var(--fiche-width);
