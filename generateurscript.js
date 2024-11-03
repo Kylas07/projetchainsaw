@@ -127,7 +127,7 @@ createApp({
         });
       }
     }
-  }
+  },
     descriptionNewLineToBR: description => typeof description === 'string' ? description.replace(/\n/g, '<br>') : '',
     descriptionBRToNewLine: description => typeof description === 'string' ? description.replace(/<br\s*\/?>/gi, '\n') : '',
     validateForm() {
