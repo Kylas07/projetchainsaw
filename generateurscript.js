@@ -21,7 +21,7 @@ createApp({
       { value: 'elementaliste', title: 'Élémentaliste' },
       { value: 'necromancien', title: 'Nécromancien' },
       { value: 'enchanteur', title: 'Enchanteur' },
-      { value: 'sabreure', title: 'Sabreur' },
+      { value: 'sabreur', title: 'Sabreur' },
       { value: 'occultiste', title: 'Occultiste' },
       { value: 'invocateur', title: 'Invocateur' }
     ];
