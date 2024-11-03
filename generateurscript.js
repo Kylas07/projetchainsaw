@@ -121,7 +121,7 @@ createApp({
       },
       watch: {
     'character.race': function(newVal) {
-      if (newVal.includes('damné')) {
+      if (newVal === 'damné') {
         this.character.classeJoue.forEach(classeCL => {
           classeCL.classe = 'damné';
         });
