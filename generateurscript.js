@@ -23,7 +23,8 @@ createApp({
       { value: 'enchanteur', title: 'Enchanteur' },
       { value: 'sabreur', title: 'Sabreur' },
       { value: 'occultiste', title: 'Occultiste' },
-      { value: 'invocateur', title: 'Invocateur' }
+      { value: 'invocateur', title: 'Invocateur' },
+      { value: 'damné', title: 'damné' }
     ];
     const race = [
       { value: 'humain', title: 'humain' },
