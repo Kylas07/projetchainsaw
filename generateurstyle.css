@@ -46,10 +46,10 @@
     #guilde{--groupe:#e27c4a; --groupe2:#f39364; --gradientg:linear-gradient(220deg, var(--groupe), var(--groupe2));}
     #autres{--groupe:#55be93; --groupe2:#7ce1b7; --gradientg:linear-gradient(220deg, var(--groupe), var(--groupe2));}
     
-    #elementaliste,#necromancien,#enchanteur{--classeimg:url('https://i.imgur.com/pk522vW.png');}
+    #elementaliste,#necromancien,#enchanteur,#occultiste{--classeimg:url('https://i.imgur.com/pk522vW.png');}
     #artiste,#clerc{--classeimg:url('https://i.imgur.com/6ccAeZJ.png');}
-    #chevalier,#paladin,#berserker{--classeimg:url('https://i.imgur.com/WF67kwu.png');}
-    #druide,#traqueur{--classeimg:url('https://i.imgur.com/blAVmhM.png');}
+    #chevalier,#paladin,#berserker,#sabreur{--classeimg:url('https://i.imgur.com/WF67kwu.png');}
+    #druide,#traqueur,#invocateur{--classeimg:url('https://i.imgur.com/blAVmhM.png');}
     #spectre,#artificier{--classeimg:url('https://i.imgur.com/O266tcB.png');}
     
     .fiche_all{
