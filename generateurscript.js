@@ -20,7 +20,10 @@ createApp({
       { value: 'artificier', title: 'Artificier' },
       { value: 'elementaliste', title: 'Élémentaliste' },
       { value: 'necromancien', title: 'Nécromancien' },
-      { value: 'enchanteur', title: 'Enchanteur' }
+      { value: 'enchanteur', title: 'Enchanteur' },
+      { value: 'sabreure', title: 'Sabreur' },
+      { value: 'occultiste', title: 'Occultiste' },
+      { value: 'invocateur', title: 'Invocateur' }
     ];
     const race = [
       { value: 'humain', title: 'humain' },
@@ -28,6 +31,8 @@ createApp({
       { value: 'faune', title: 'faune' },
       { value: 'sangdragon', title: 'sangdragon' },
       { value: 'marinis', title: 'marinis' },
+      { value: 'vampire', title: 'vampire' },
+      { value: 'damné', title: 'damné' },
       { value: 'hybride', title: 'hybride' }
     ];
 
