@@ -119,6 +119,15 @@ createApp({
         }
         return '';
       },
+      watch: {
+    'character.race': function(newVal) {
+      if (newVal.includes('damné')) {
+        this.character.classeJoue.forEach(classeCL => {
+          classeCL.classe = 'damné';
+        });
+      }
+    }
+  }
     descriptionNewLineToBR: description => typeof description === 'string' ? description.replace(/\n/g, '<br>') : '',
     descriptionBRToNewLine: description => typeof description === 'string' ? description.replace(/<br\s*\/?>/gi, '\n') : '',
     validateForm() {
