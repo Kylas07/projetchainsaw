@@ -133,7 +133,8 @@ main {
     background-attachment: fixed;
 }
 .main_wrapper {
-    height: 2000px;
     background-color: var(--transparence-color);
     backdrop-filter: blur(10px);
+        z-index: 111;
+    position: relative;
 }
