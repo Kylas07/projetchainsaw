@@ -1,0 +1,139 @@
+:root {
+    --background-color: #F1F1F1;
+    --background-header:#1E1E1E;
+    --main-color:#026399;
+    --main-color-dark:#012133;
+    --main-color-light:#31B4FC;
+    --header: url('https://i.imgur.com/BlSbTRE.png');
+    --header-partial: url('https://i.imgur.com/zFkCgEc.png');
+    --background-zone: url('https://i.imgur.com/dA9kWWv.png');
+    --background-index: url('https://i.imgur.com/JHvQKwI.jpeg');
+    --background-pa: url('https://i.imgur.com/1Z2Z9Zz.png');
+    --background-category: url('https://i.imgur.com/1Z2Z9Zz.png');
+}
+header {
+    background-image: var(--background-zone);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.overlay_container {
+    height: 960px;
+    display: grid;
+}
+.overlay_container .svg_back, .overlay_container .svg_front, .overlay_container .header_img, .overlay_fixed, .overlay_blur, .overlay_minirender, .header_font{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+.overlay_container .svg_back {
+    z-index: 1;
+    margin-top: -9%;
+    scale: 1.1;
+}
+.overlay_container .svg_front {
+    z-index: 3;
+    justify-self: end;
+    margin-right: 20%;
+    margin-top: -4%;
+    scale: 1.1;
+}
+.overlay_container .header_img {
+    z-index: 2;
+    background-size: contain;
+    width: 55%;
+    max-width: 1000px;
+    height: 100%;
+    background-image: var(--header);
+    background-repeat: no-repeat;
+    align-self: center;
+    justify-self: center;
+    margin-right: 30%;
+}
+.overlay_fixed {
+    background: linear-gradient(194deg, #000 -0.05%, rgba(0, 0, 0, 0.00) 54.77%, #000 92.9%, #000 100%);
+    z-index: 6;
+}
+.overlay_blur {
+    mask-image: linear-gradient(180deg, rgb(217 217 217 / 0%) 70.63%, rgb(0 0 0) 80%);
+backdrop-filter: blur(10px);
+z-index: 4;
+}
+.overlay_minirender {
+    background-image: var(--header-partial);
+    width: 62%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 51%;
+    margin-right: 30%;
+    z-index: 5;
+}
+.header_font {
+    z-index: 6;
+    justify-self: right;
+    align-content: center;
+    margin-inline-end: 12%;
+    margin-block-start: 7%;
+}
+.header_font h1 {
+    background-image: linear-gradient(45deg, var(--main-color-dark), var(--main-color-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--main-color-light);
+    font-family: 'Qaligo-SS01';
+    font-size: 4rem;
+    font-weight: 400;
+    margin-block-start: -6rem;
+    margin-inline-end: -1rem;
+    margin-block-end: 0rem;
+    line-height: 1.8;
+}
+.header_font span {
+    font-family: "Abril Fatface", serif;
+    line-height: .8;
+    align-items: self-end;
+    font-size: 4rem;
+    font-weight: 400;
+    background: linear-gradient(93deg, var(--background-color) 2.65%, var(--background-header) 121.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.header_font div {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    margin-bottom: 2rem;
+}
+.subtext_header {
+    color: #FFF;
+font-family: "Public Sans";
+font-size: 16px;
+}
+/*************** main ****************/
+#hitc_body {
+    background: white;
+}
+#hitc_body .svg_back, .svg_front, .header_img{
+    position: fixed;
+}
+#hitc_body main {
+    z-index: 11;
+    position: relative;
+}
+main {
+    z-index: 11;
+    position: relative;
+    background-image: var(--background-index);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main_wrapper {
+    height: 2000px;
+    background-color: var(--transparence-color);
+    backdrop-filter: blur(10px);
+}
