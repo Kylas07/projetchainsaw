@@ -1,11 +1,8 @@
 #meteion_fiche {
     --maincolor: #1BB99C;
-    /* --bigimg:url('https://i.imgur.com/3yDbVG5.png');
+    --bigimg:url('https://i.imgur.com/3yDbVG5.png');
     --smallimg:url('https://i.imgur.com/YfcZSEN.png');
-    --bgimg:('https://i.imgur.com/hoq55l2.jpeg'); */
-    --bigimg:url('./assets/phzinonbig.png');
-    --smallimg:url('./assets/phainon.png');
-    --bgimg:url('./assets/phainonrender.png');
+    --bgimg:('https://i.imgur.com/hoq55l2.jpeg');
     --bgcolor:#090B11;
     --maincolor:#0E2BB7;
     --lightcolor:#3353F0;
