@@ -1,4 +1,7 @@
-#meteion_fiche {
+body {
+    margin: auto;
+}
+    #meteion_fiche {
     --maincolor: #1BB99C;
     --bigimg:url('https://i.imgur.com/3yDbVG5.png');
     --smallimg:url('https://i.imgur.com/YfcZSEN.png');
