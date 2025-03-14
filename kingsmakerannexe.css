@@ -77,7 +77,8 @@ input{display:none}
 #page3:checked ~ .left #page3,
 #page4:checked ~ .left #page4,
 #page5:checked ~ .left #page5,
-#page6:checked ~ .left #page6{
+#page6:checked ~ .left #page6,
+#page7:checked ~ .left #page7{
   color:var(--lighter); 
   max-height: 900px;
 }
@@ -87,7 +88,8 @@ input{display:none}
 #page3:checked ~ .left #page3 label,
 #page4:checked ~ .left #page4 label,
 #page5:checked ~ .left #page5 label,
-#page6:checked ~ .left #page6 label{
+#page6:checked ~ .left #page6 label,
+#page7:checked ~ .left #page7 label{
   text-decoration: underline 2px;
   text-underline-offset: 5px;
   font-style:italic; 
@@ -98,7 +100,8 @@ input{display:none}
 #page3:checked ~ .left ~ .right #page3,
 #page4:checked ~ .left ~ .right #page4,
 #page5:checked ~ .left ~ .right #page5,
-#page6:checked ~ .left ~ .right #page6{
+#page6:checked ~ .left ~ .right #page6,
+#page7:checked ~ .left ~ .right #page7{
   opacity:1;
   z-index:3;
 }
@@ -149,6 +152,7 @@ input{display:none}
 #page4{--head-img:url('https://i.imgur.com/f95LXOd.jpeg');}
 #page5{--head-img:url('https://i.imgur.com/FSVS6Pm.jpeg');}
 #page6{--head-img:url('https://i.imgur.com/813dpiz.jpeg');}
+#page7{--head-img:url('https://i.imgur.com/CjqXB5S.jpeg');}
 
 .head{
   width:900px;
