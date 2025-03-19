@@ -45,6 +45,9 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+#meteion i, #meteion u {
+color: var(--meteionclair);
+}
 
 #meteion b:before {
   content: "« ";
