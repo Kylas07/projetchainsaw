@@ -1,0 +1,101 @@
+:root {
+  --meteionfond: #101010;
+  --meteionclair: #ddd;
+  --meteionaccent: #a8b7df;
+  --mtitrefont: "Abril Fatface";
+  --mtitre: linear-gradient(
+    to right,
+    var(--meteionclair),
+    var(--meteionaccent)
+  );
+  --mtxt: "Open Sans";
+  --mfondalt: rgba(16, 16, 16, 0.7);
+}
+
+@keyframes flotter {
+  0% {
+    top: -10px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
+#meteion {
+  width: 1000px;
+  background: var(--meteionfond);
+  min-height: 100px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b c";
+  overflow: hidden;
+  justify-content: center;
+}
+#meteion * {
+  box-sizing: border-box;
+}
+
+#meteion b {
+  background: var(--mtitre);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#meteion b:before {
+  content: "« ";
+}
+#meteion b:after {
+  content: " »";
+}
+
+#meteion .titre {
+  font: 62px var(--mtitrefont);
+  background: var(--mtitre);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  padding: 50px;
+  text-align: center;
+  line-height: 100%;
+  grid-area: a;
+  z-index: 2;
+}
+
+#meteion .lune {
+  color: #fff;
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  font-size: 120px;
+  z-index: 1;
+  filter: blur(2px);
+  animation: flotter 3s ease-in-out infinite;
+  position: relative;
+}
+
+#meteion .textbloc {
+  background: var(--mfondalt);
+  grid-area: b;
+  width: 645px;
+  font: 14px var(--mtxt);
+  color: var(--meteionclair);
+  text-align: justify;
+  padding: 35px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  min-height: 500px;
+}
+
+#meteion .kya {
+  background: url("https://i.imgur.com/4Gka5vj.png");
+  grid-area: c;
+  background-size: cover;
+  background-position: top;
+  width: 461px;
+  margin-left: -100px;
+}
