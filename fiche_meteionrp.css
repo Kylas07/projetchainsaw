@@ -46,7 +46,7 @@
   color: transparent;
 }
 #meteion i, #meteion u {
-color: var(--meteionclair);
+color: var(--meteionaccent);
 }
 
 #meteion b:before {
