@@ -1,0 +1,120 @@
+body {
+  background:#E8E8E8;
+  margin:50px auto;
+  justify-items: center;
+}
+.elio_rp {
+  display:grid;
+  width:600px;
+  min-height:100px;
+  border: 1px solid #BFCAFF;
+  --elio:#3353F0;
+}
+.elio_rptop {
+  height: 300px;
+  display:grid;
+  overflow: hidden;
+}
+.elio_rptop > div {
+  grid-column:1;
+  grid-row:1;
+}
+.elio_rptop > div:nth-of-type(1) {
+  background-image:url('https://i.imgur.com/BVHCir6.png');
+  background-size: cover;
+  filter:blur(5px);
+  background-position: bottom;
+}
+.elio_rptop > div:nth-of-type(2) {
+   background: linear-gradient(180deg, rgba(232, 232, 232, 0.00) 0%, #E8E8E8 100%);
+   z-index: 10;
+}
+.elio_rptop > div:nth-of-type(3) {
+    background-image: url(https://i.imgur.com/BVHCir6.png);
+    background-size: cover;
+    z-index: 10;
+    width: 480px;
+    justify-self: center;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+}
+.elio_rptop > div:nth-of-type(4) {
+background: linear-gradient(180deg, rgba(232, 232, 232, 0.00) 0%, #E8E8E8 100%);
+    z-index: 11;
+    width: 480px;
+    justify-self: center;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+}
+.elio_rpcadre {
+  border: 1px solid #BFCAFF;
+}
+.elio_rpinfo {
+  width: 480px;
+  justify-self: center;
+  padding:20px 0;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.elio_rpinfo > div:nth-of-type(1) {
+  background-image:url('https://i.imgur.com/z6DGNxV.png');
+  border-radius: 100%;
+  height:100px;
+  width:100px;
+  background-size: cover;
+  outline: 1px solid var(--elio);
+  outline-offset: 5px;
+}
+.elio_rp eliotitle {
+  background: linear-gradient(90deg, var(--elio) 0%, #090B11 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Abril Fatface";
+font-size: 24px;
+font-weight: 400;
+line-height: 25px;
+text-transform: uppercase;
+}
+.elio_rp subtitle {
+  font-family: "Noto Sans";
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 25px;
+background: linear-gradient(90deg, var(--elio) 0%, #090B11 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.elio_rp featelio {
+color: #575757;
+font-family: "Playfair Display";
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1.8px;
+text-transform: uppercase;
+}
+.elio_rptxt {
+      padding: 10px 60px;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+}
+.elio_rp elio {
+  background: linear-gradient(90deg, var(--elio) 39.72%, #090B11 76.69%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 700;
+}
+.elio_rp i {
+color: var(--elio);
+font-style: italic;
+}
+.elio_rp u {
+    text-decoration-color: var(--elio);
+    text-decoration-style: wavy;
+}
