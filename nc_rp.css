@@ -68,7 +68,7 @@ background: linear-gradient(180deg, rgba(232, 232, 232, 0.00) 0%, #E8E8E8 100%);
   outline: 1px solid var(--nccolor);
   outline-offset: 5px;
 }
-.elio_rp nctitle {
+.nc_rp nctitle {
   background: linear-gradient(90deg, var(--nccolor) 0%, #090B11 100%);
 background-clip: text;
 -webkit-background-clip: text;
