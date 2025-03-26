@@ -1,0 +1,122 @@
+.nc_rp {
+  display:grid;
+  width:600px;
+  min-height:100px;
+  border: 1px solid var(--nccolor);
+  justify-self: center;
+
+}  
+.credits_nc {    padding: 25px 0;
+    font-family: "Noto Sans";
+    color: #d3d3d3;
+    text-align: right;
+    font-size: 10px;
+    margin-right: 20px;}
+.nc_rptop {
+  height: 300px;
+  display:grid;
+  overflow: hidden;
+}
+.nc_rptop > div {
+  grid-column:1;
+  grid-row:1;
+}
+.nc_rptop > div:nth-of-type(1) {
+  background-image:var(--image_rp);
+  background-size: cover;
+  filter:blur(5px);
+  background-position: bottom;
+}
+.nc_rptop > div:nth-of-type(2) {
+   background: linear-gradient(180deg, rgba(232, 232, 232, 0.00) 0%, #E8E8E8 100%);
+   z-index: 10;
+}
+.nc_rptop > div:nth-of-type(3) {
+    background-image: var(--image_rp);
+    background-size: cover;
+    z-index: 10;
+    width: 480px;
+    justify-self: center;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+}
+.nc_rptop > div:nth-of-type(4) {
+background: linear-gradient(180deg, rgba(232, 232, 232, 0.00) 0%, #E8E8E8 100%);
+    z-index: 11;
+    width: 480px;
+    justify-self: center;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+}
+.nc_rpcadre {
+  border: 1px solid #BFCAFF;
+}
+.nc_rpinfo {
+  width: 480px;
+  justify-self: center;
+  padding:20px 0;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nc_rpinfo > div:nth-of-type(1) {
+  background-image:var(--image_rp);
+  border-radius: 100%;
+  height:100px;
+  width:100px;
+  background-size: cover;
+  outline: 1px solid var(--nccolor);
+  outline-offset: 5px;
+}
+.elio_rp eliotitle {
+  background: linear-gradient(90deg, var(--elio) 0%, #090B11 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Abril Fatface";
+font-size: 24px;
+font-weight: 400;
+line-height: 25px;
+text-transform: uppercase;
+}
+.nc_rp subtitle {
+  font-family: "Noto Sans";
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 25px;
+background: linear-gradient(90deg, var(--nccolor) 0%, #090B11 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.nc_rp featelio {
+color: #575757;
+font-family: "Playfair Display";
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1.8px;
+text-transform: uppercase;
+}
+.nc_rptxt {
+      padding: 10px 60px;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+}
+.nc_rp elio {
+  background: linear-gradient(90deg, var(--elio) 39.72%, #090B11 76.69%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 700;
+}
+.nc_rp i {
+color: var(--nccolor);
+font-style: italic;
+}
+.nc_rp u {
+    text-decoration-color: var(--nccolor);
+    text-decoration-style: wavy;
+}
