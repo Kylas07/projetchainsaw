@@ -1,14 +1,10 @@
-body {
-  background:#E8E8E8;
-  margin:50px auto;
-  justify-items: center;
-}
 .elio_rp {
   display:grid;
   width:600px;
   min-height:100px;
   border: 1px solid #BFCAFF;
   --elio:#3353F0;
+  justify-self: center;
 }
 .elio_rptop {
   height: 300px;
