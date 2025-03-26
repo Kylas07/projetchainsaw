@@ -68,8 +68,8 @@ background: linear-gradient(180deg, rgba(232, 232, 232, 0.00) 0%, #E8E8E8 100%);
   outline: 1px solid var(--nccolor);
   outline-offset: 5px;
 }
-.elio_rp eliotitle {
-  background: linear-gradient(90deg, var(--elio) 0%, #090B11 100%);
+.elio_rp nctitle {
+  background: linear-gradient(90deg, var(--nccolor) 0%, #090B11 100%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -90,7 +90,7 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-.nc_rp featelio {
+.nc_rp featnc {
 color: #575757;
 font-family: "Playfair Display";
 font-size: 12px;
@@ -105,8 +105,8 @@ text-transform: uppercase;
     font-weight: 400;
     text-align: justify;
 }
-.nc_rp elio {
-  background: linear-gradient(90deg, var(--elio) 39.72%, #090B11 76.69%);
+.nc_rp dialoguenc {
+  background: linear-gradient(90deg, var(--nccolor) 39.72%, #090B11 76.69%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
