@@ -1,0 +1,203 @@
+#fiche_lou {
+  --bg:#0E0E0E;
+  --bglou:#070707;
+  --spacing:20px;
+  --loutxt:#E7B206;
+  --loumain:#B91C1F;
+  background-image:linear-gradient(144deg, rgba(18 0 0 / 26%) 10%, rgba(24 16 0 / 23%));
+  width:700px;
+  font-family: monospace;
+  min-height:200px;
+  outline:1px solid var(--loutxt);
+  outline-offset:-10px;
+}
+#fiche_lou .FirstPage_lou {
+  display:grid;
+  grid-template-rows:600px 370px;
+  grid-template-columns:1fr 1fr;
+  padding: var(--spacing);
+}
+.FirstPage_lou .divider_lou {
+  padding:var(--spacing);
+}
+.FirstPage_lou > .divider_lou:nth-of-type(1) {
+  grid-column:1;
+  border-right:1px solid;
+  border-image: linear-gradient(45deg, var(--loutxt),var(--loumain)) 1;
+}
+.FirstPage_lou > .divider_lou:nth-of-type(2) {
+  grid-column:2;
+}
+.FirstPage_lou > .divider_lou:nth-of-type(3) {
+  grid-column:1/3;
+}
+.loutxt {
+    font-family: 'Roboto Mono';
+    font-weight: bolder;
+    font-size: 13px;
+    text-align: justify;
+    color: var(--loutxt);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+   margin: 9px 0px;
+}
+.eyes_bg {
+  background-image: url("https://i.imgur.com/pMtF634.jpeg");
+  background-size: cover;
+ height: 406px;
+}
+.eyes_bg img {
+  object-fit: contain;
+    width: 100%;
+    height: 400px;
+    margin-top: -100px;
+}
+.divider_lou.bot_lou span {
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 40px;
+    text-align: justify;
+    color: transparent; 
+    -webkit-text-stroke: 1px var(--loutxt);
+}
+.bot_lou img {
+      object-fit: cover;
+    width: 100%;
+    height: 195px;
+    border:1px solid;
+    border-image: linear-gradient(185deg, var(--loutxt),var(--loumain)) 1;
+    margin: 20px 0;
+}
+.bot_lou .name_lou {
+  font-size: 50px;
+    color: aliceblue;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 40px;
+    place-self: center;
+    text-shadow: 0 0 20px hsl(0 100% 40% / 0.6);
+    color: var(--loumain);
+}
+.SecondPage_lou {
+    background: var(--loumain);
+}
+.titre_lou {
+	text-transform: uppercase;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+	place-content: center;
+	font-family: "Playfair Display SC",serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 24px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.titre_lou div>span {
+	color: var(--loutxt);
+}
+.titre_lou ss {
+	-webkit-text-decoration-line: line-through;
+	text-decoration-line: line-through;
+	-webkit-text-decoration-color: var(--loutxt);
+	text-decoration-color: var(--loutxt);
+	text-decoration-thickness: 3px;
+}
+.titre_lou uu {
+	display: inline-block;
+	line-height: 0em;
+	padding-bottom: .5em;
+	background: rgba(244 208 19 / 80%);
+}
+.ThirdPage_lou {
+background-image: url(https://i.imgur.com/DPXY8TG.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 50px 250px 50px max-content;
+    grid-template-columns: 1fr 1fr 4fr 1fr;
+    grid-gap: var(--spacing);
+}
+.ThirdPage_lou .infos_lou{
+    grid-column: 2;
+    grid-row: 2;
+    background: rgb(255 255 255 / 5%);
+    border: 1px solid rgb(255 255 255 / 5%);
+    backdrop-filter: blur(20px);
+    outline: 1px solid rgb(255 255 255 / 5%);
+    outline-offset: -10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    color: white;
+}
+.ThirdPage_lou .infos_lou span {
+      padding: 2px 10px;
+}
+.ThirdPage_lou span {
+    background: var(--bglou);
+    border-radius: 5px;
+    color: var(--loumain);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.ThirdPage_lou span:nth-of-type(even) {
+    color: var(--loutxt);
+}
+.ThirdPage_lou span:nth-of-type(odd) {
+    color: var(--loumain);
+}
+.ThirdPage_lou li {
+    list-style: none;
+}
+.FourthPage_lou .fact_lou {
+      min-height: 150px;
+    background: var(--bglou);
+    margin: 30px;
+    padding: var(--spacing);
+    color: #e5e7eb;
+}
+.ThirdPage_lou .name_skill_lou{
+    background: var(--bglou);
+    grid-column: 2 / 4;
+    grid-row: 4;
+    margin: 30px;
+    padding: var(--spacing);
+  color:#e5e7eb;
+}
+.FourthPage_lou {
+    min-height: 800px;
+    background-image: url(https://i.imgur.com/KDABRN9.png);
+    background-size: cover;
+    background-position: center;
+display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.irl_lou {
+    margin: var(--spacing);
+    height: 75px;
+    background: var(--loutxt);
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    font-family: arial;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
