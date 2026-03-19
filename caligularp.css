@@ -68,6 +68,21 @@
 }
 .Asahi-hi:hover > .Asahi-top entt {
   color: black;}
+calitw {
+  padding:5px;background:white;color:black;
+}
+calimot {
+    text-align: right;
+    padding: 5px;
+    background: black;
+}
+.Asahi-hi:hover calimot {
+  background: white;
+  color:black;
+}
+.Asahi-hi:hover calitw {
+  background:black;color:white;
+}
 .Asahi-top entt i{    
   color: var(--background);
   background: var(--maincolocali2);
