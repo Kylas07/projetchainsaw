@@ -1,0 +1,343 @@
+.Asahi-hi * {
+  transition:.5s;
+}
+.Asahi-hi {
+  --mix: unset;
+  --background:#0c0c0c;
+  --maincolocali:#bbf275;
+  --calitext:white;
+  --maincolocali2:#bbf275;
+  width: 600px;
+  background-image: radial-gradient(circle farthest-side at center, var(--maincolocali), black 40%);
+  background-position: 100% 200%;
+  background-size: 100% 200%;
+  color:#1E1E1E;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition:.5s;
+}
+.Asahi-hi:hover {
+  background-position: 100% 100%;
+  transition:.5s;
+}
+.Asahi-fact span {    
+  padding: 0 6px;
+  background: var(--maincolocali);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.Asahi-hi b {
+  color:var(--maincolocali);
+  font-weight: bold;  
+}
+.Asahi-hi i {
+  color:var(--maincolocali);
+}
+.Asahi-hi uua {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: .5em;
+  background: #c4caff;
+}
+.Asahi-char uua {
+    display: inline-block;
+    line-height: 0em;
+    padding-bottom: .5em;
+    background: var(--maincolocali);
+}
+.Asahi-top {
+  display:flex;
+  flex-direction:column;
+  padding:40px;
+  gap:20px;
+}
+.Asahi-top entt {
+  color: var(--maincolocali);
+  text-align: center;
+  font-family: "Arial Nova";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.Asahi-hi:hover > .Asahi-top entt {
+  color: black;}
+.Asahi-top entt i{    
+  color: var(--background);
+  background: var(--maincolocali2);
+}
+.Asahi-hi:hover > .Asahi-top entt i{
+  color:var(--maincolocali)!important;
+  background: black;
+}
+.Asahi-about {
+  border-top:1px solid var(--maincolocali);
+  display:flex;
+  flex-direction:row;
+}
+.left-about {
+  padding:20px;
+  border-right:1px solid var(--maincolocali);
+  width: 25%;
+  writing-mode: vertical-lr;
+}
+.left-about span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: #1E1E1E;
+  text-align: center;
+  font-family: "Asap Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
+.starz {
+    position: absolute;
+    margin-left: 134px;
+    margin-top: -17px;
+}
+.starz img {
+  width: 34px;
+  height: 34px;
+}
+.right-about {
+  padding:20px;
+  background-image: url(https://i.imgur.com/MaaApFu.jpeg);
+  background-size: cover;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  mix-blend-mode: var(--mix);
+}
+.right-about li {
+  list-style: none;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.right-about li ol {
+  list-style: none;
+  margin-block-end: 0;
+  border-block-start: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  color: var(--maincolocali);
+  background:white;
+  padding:0 2px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  width: max-content;
+}
+.Asahi-facts {
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.Asahi-facts .wolf {
+  width:40%;
+  background-size: cover;
+  mix-blend-mode: var(--mix);
+  filter:grayscale(1);
+}
+.Asahi-hi:hover .Asahi-facts .wolf {
+  filter:grayscale(0);
+}
+.Asahi-quote {
+  color: #ffffff;
+  font-family: "Archivo Black";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+}
+.Asahi-quote img {
+  width: 21px;
+  height: 21px;
+}
+.Asahi-quote > div {
+  display:flex;
+}
+.Asahi-quote > div span.Asahi-block {
+    background: var(--maincolocali2);
+    width: 16px;
+    height: 90px;
+    align-self: center;
+    margin-top: 10px;
+}
+.Asahi-quote > div:nth-of-type(2) span.Asahi-block {
+  background: var(--maincolocali2);;
+  height: 19px;
+}
+.Asahi-fact {
+  width:40%;
+}
+.Asahi-fact div:nth-of-type(1) {
+  display: flex;
+}
+.Asahi-fact div:nth-of-type(2) {
+    max-height: 85px;
+    overflow: hidden;
+    filter:grayscale(1);
+}
+.Asahi-hi:hover .Asahi-fact div:nth-of-type(2) {
+  filter:grayscale(0);
+}
+.Asahi-fact img {
+  width: 90px;
+  object-fit:cover;
+  margin-right: -33px;
+}
+.Asahi-mid {
+  padding: 40px;
+  color: var(--calitext);
+}
+.Asahi-mid div {
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    background: rgba(255 255 255 / 6%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 9%);
+}
+
+.Asahi-char {
+    display: flex;
+    background: #1E1E1E;
+    color: white;
+    padding: 10px 10px 0px 10px;
+    gap: 20px;
+}
+.Asahi-char .Asahi-wings {
+    display: grid;
+    place-items: center;
+    width: 50%;
+}
+.Asahi-char .Asahi-wings > img {
+  grid-row:1;
+  grid-column:1;
+  object-fit: contain;
+  width: 100%;
+}
+
+.Asahi-perso {
+    width: 50%;
+}
+asahitt {
+  display:block;
+  color: var(--maincolocali);
+  font-family: "Archivo Black";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 108.86%;
+}
+asahitt2 {
+  display:block;
+  color: var(--maincolocali);
+  font-family: "Archivo Black";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.wing-text {
+  max-height: 500px;
+    overflow: auto;
+    padding-right: 10px;
+}
+
+.Asahi-story {
+  display:flex;
+  gap:20px;
+  padding:40px;
+  background: linear-gradient(180deg, #D9D9D9 0%, var(--maincolocali) 100%);
+}
+.Asahi-story div:nth-of-type(1) {
+  width:18%;
+  color: var(--Background, #1E1E1E);
+  font-family: "Instrument Serif";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Asahi-story div:nth-of-type(2) {
+  width: 80%;
+  padding-right:20px;
+  height: 320px;
+  overflow: auto;
+}
+.Asahi-story aa2 {
+  color:white;
+}
+.Asahi-end {
+    display: grid;
+    padding: 10px 30px;
+    background: var(--maincolocali);
+    color: var(--background);
+    place-content: center;
+}
+.Asahi-hi:hover .Asahi-end {
+  background: var(--background);
+  color:var(--maincolocali);
+}
+.Asahi-hi:hover .Asahi-quote > div span.Asahi-block {
+  background: white;
+}
+.Asahi-hi:hover .Asahi-quote {
+  color:var(--maincolocali);
+}
+.Asahi-end a {
+  text-decoration: none;
+  color:unset;
+}
+.Asahi-end img {
+    width: 125px;
+    height: 100px;
+    object-fit: cover;
+}
+.Asahi-end aa2 {
+  color: var(--maincolocali);
+  font-family: "Instrument Serif";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+Asahi-aesthetic {
+    display: block;
+    text-align: center;
+}
+Asahi-aesthetic > div {
+  
+}
+Asahi-aesthetic div img {
+    width: 50px;
+    margin:0 5px;
+    height: 50px;
+    object-fit: cover;
+}
+Asahi-aesthetic i {
+  text-transform: uppercase;
+    font-weight: 600;
+    font-family: poppins;
+}
