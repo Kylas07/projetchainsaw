@@ -107,7 +107,6 @@ padding-left: 30px;
     align-items: center;
     border-left: 1px solid var(--bgkalei);
     flex-direction: column;
-    justify-content: center;
     gap: var(--gap);
 }
 .kalei_pkm {
