@@ -1,0 +1,64 @@
+/* ============================================================
+   T-card Aetherion — feuille de style à héberger sur le forum.
+   Colle-la UNE fois dans le CSS global de ton forum (ou héberge
+   ce fichier et charge-le). Le code forum généré par l'éditeur
+   ne contient que les classes .tc — c'est ce fichier qui les
+   habille. La couleur d'accent est passée par la carte elle-même
+   (variable --acc en style inline), pas besoin d'y toucher ici.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&display=swap');
+
+.tc{width:650px;max-width:100%;margin:0 auto;font-family:'Barlow',Verdana,Geneva,sans-serif;background:#FFFFFF;border-radius:16px;overflow:hidden;border:1px solid #E7E2DA;box-shadow:0 18px 44px -22px rgba(45,38,30,.38)}
+.tc details>summary::-webkit-details-marker{display:none}
+.tc details>summary{list-style:none}
+.tc .hd{background:#211C18;padding:16px 20px;display:flex;align-items:center;gap:14px;border-bottom:3px solid var(--acc)}
+.tc .htx{flex:1;min-width:0;line-height:1.04}
+.tc .kick{display:block;font-family:'Oswald','Arial Narrow','Haettenschweiler',Verdana,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--acc);font-weight:600}
+.tc .nm{display:block;font-family:'Oswald','Arial Narrow','Haettenschweiler',Verdana,sans-serif;font-size:25px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#FFFFFF;margin-top:1px}
+.tc .cnt{font-family:'Oswald','Arial Narrow','Haettenschweiler',Verdana,sans-serif;background:var(--acc);border:none;border-radius:7px;padding:5px 13px;font-size:14px;font-weight:700;letter-spacing:1px;color:#fff;flex:none}
+.tc .row{border-top:1px solid #E7E2DA}
+.tc .sum{display:flex;align-items:center;gap:14px;padding:12px 16px;cursor:pointer}
+.tc .spw{position:relative;flex:none}
+.tc .sb{border:1px solid #E7E2DA;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:none;width:54px;height:54px;border-radius:12px}
+.tc .sb.lg{width:148px;height:148px;border-radius:16px}
+.tc .sb.ph{background:repeating-linear-gradient(45deg,#F0ECE4 0 7px,#E7E1D8 7px 14px)}
+.tc .sb.im{background:#FBFAF7}
+.tc .sb img{max-width:100%;max-height:100%;object-fit:contain;image-rendering:pixelated}
+.tc .phl{font-family:monospace;font-size:10px;color:#948B7F}
+.tc .bov{position:absolute;bottom:-4px;left:-4px}
+.tc .ball{position:relative;width:18px;height:18px;border-radius:50%;border:1.5px solid #0E0C0A;overflow:hidden;display:inline-block;background:#fff;flex:none;box-shadow:0 2px 5px rgba(0,0,0,.5)}
+.tc .ball i{position:absolute;left:0;right:0;display:block;font-style:normal}
+.tc .ball .bt{top:0;height:50%;background:var(--bt)}
+.tc .ball .bb{top:50%;height:2px;transform:translateY(-50%);background:var(--bb)}
+.tc .ball .bc{top:50%;left:50%;right:auto;width:6px;height:6px;transform:translate(-50%,-50%);border-radius:50%;background:#fff;border:1.5px solid #0E0C0A}
+.tc .nw{flex:1;min-width:0}
+.tc .nr{display:flex;align-items:center;gap:7px}
+.tc .disp{font-family:'Oswald','Arial Narrow','Haettenschweiler',Verdana,sans-serif;font-weight:700;font-size:18px;letter-spacing:.3px;color:var(--acc)}
+.tc .gd{font-weight:700;font-size:15px}
+.tc .meta{display:block;font-size:12px;color:#948B7F;margin-top:1px}
+.tc .tys{display:flex;gap:5px;flex:none}
+.tc .ty{color:#fff;font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.3px}
+.tc .ty.big{font-size:11px;padding:4px 11px}
+.tc .bd{padding:2px 16px 20px 16px}
+.tc .cols{display:flex;gap:18px;flex-wrap:wrap}
+.tc .lft{flex:none}
+.tc .tyb{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tc .capx{margin-top:12px;font-size:11.5px;color:#948B7F;line-height:1.7}
+.tc .capx b{color:#4E483F}
+.tc .rgt{flex:1;min-width:240px}
+.tc .stats{display:flex;gap:10px;margin-bottom:14px}
+.tc .stat{flex:1;background:#F5F1EA;border:1px solid #ECE6DD;border-radius:10px;padding:9px 12px}
+.tc .stl{font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;color:#948B7F;font-weight:700}
+.tc .stv{font-size:14px;font-weight:600;color:#26221D;margin-top:3px}
+.tc .sh{font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;color:#948B7F;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.tc .shln{flex:1;height:2px;border-radius:2px;background:var(--acc);opacity:.9}
+.tc .mv{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tc .mvi{display:flex;align-items:center;gap:9px;background:#F5F1EA;border:1px solid #ECE6DD;border-radius:8px;padding:8px 10px}
+.tc .mvbar{width:4px;align-self:stretch;border-radius:4px}
+.tc .mvx{flex:1;min-width:0}
+.tc .mvn{font-weight:600;font-size:12.5px;color:#26221D}
+.tc .mvt{font-size:10.5px;color:#948B7F}
+.tc .dsc{margin-top:14px;padding-top:12px;border-top:1px dashed #E7E2DA}
+.tc .dscl{font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;color:#948B7F;font-weight:700;margin-bottom:5px}
+.tc .dscp{margin:0;font-size:13px;line-height:1.55;color:#4E483F;font-style:italic}
